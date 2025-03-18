@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
     <title>SpringMVC</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap5/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="src/main/resources/css/estilos.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="css/bootstrap5/js/bootstrap.min.js"></script>
   </head>
@@ -44,13 +44,13 @@
         <form class="d-flex" method="GET" action="/">
           <input class="form-control me-2" type="search" placeholder="Procurar" 
           aria-label="Search" name="descricao">
-          <button class="btn btn-outline-success" type="submit">Procurar</button>
+          <button class="btn btn-primary" type="submit">Procurar</button>
         </form>
         </div>
       </div>
       </nav>
       <div class="logo">
-        <img src="imagens/tecnologia.jpeg" alt="Codigo Binário"/>
+        <img src="imagens/tecnologia.jpeg" alt="tes"/>
       </div>		  
     </header>
     <main>
