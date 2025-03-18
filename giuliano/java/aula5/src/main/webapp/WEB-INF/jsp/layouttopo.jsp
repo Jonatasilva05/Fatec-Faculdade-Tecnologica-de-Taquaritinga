@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
     <title>SpringMVC</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap5/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="stylesheet" type="text/css" href="src/main/resources/css/estilos.css" />
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="css/bootstrap5/js/bootstrap.min.js"></script>
   </head>
@@ -50,7 +50,7 @@
       </div>
       </nav>
       <div class="logo">
-        <img src="imagens/binario.png" alt="Codigo Binário"/>
+        <img src="imagens/tecnologia.jpeg" alt="Codigo Binário"/>
       </div>		  
     </header>
     <main>
