@@ -26,7 +26,7 @@
             <a class="nav-link" href="/curso">Curso</a>
           </li>		  				  
           <li class="nav-item">
-            <a class="nav-link" href="/cadastro">Cadastro</a>
+            <a class="nav-link" href="/login">Login</a>
           </li>		  				  
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
