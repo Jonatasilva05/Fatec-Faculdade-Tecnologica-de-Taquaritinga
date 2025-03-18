@@ -68,6 +68,6 @@ public class Aplicacao extends SpringBootServletInitializer {
 			}			
 		});		
 		
-		frame.setVisible(true);    	
+		frame.setVisible(true);    
     }
 }

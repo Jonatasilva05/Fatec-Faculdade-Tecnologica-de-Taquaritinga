@@ -50,7 +50,7 @@
       </div>
       </nav>
       <div class="logo">
-        <img src="imagens/spring.png" />
+        <img src="imagens/binario.png" alt="Codigo Binário"/>
       </div>		  
     </header>
     <main>
