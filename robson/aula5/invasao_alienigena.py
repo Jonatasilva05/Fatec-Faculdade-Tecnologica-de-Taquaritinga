@@ -24,21 +24,46 @@ class InvasaoAlien:
         self.nave = Nave(self)
         self.bg_color = (230,230,230) # COLOCANDO COR DE FUNDO CINZA
 
+
     def jogo_on(self):
         while True:
             def _checar_eventos(self):
                 for event in pygame.event.get():
                     if event.type == pygame.QUIT:
                         sys.exit()
+                    elif event.type == pygame.KEYDOWN:
+                        self._checar_teclaspress_eventos(event)
+                    elif event.type == pygame.KEYUP:
+                        self._checar_soltarteclas_eventos(event)
 
-            self.screen.fill(self.settings.bg_color)
-            self.nave.blitme()
+            def _checar_teclaspress_eventos(self, event):
+                if event.key == pygame.K_RIGHT:
+                    self.nave.mover_direita = True
+                elif event.key == pygame.K_LEFT:
+                    self.nave.mover_esquerda = True
+                elif event.key == pygame.K_q:
+                    sys.exit()
 
-            # ATUALIZA A TELA
-            pygame.display.flip()
+            def _checar_soltarteclas_eventos(self, event):
+                if event.key == pygame.K_RIGHT:
+                    self.nave.mover_direita = False
+                elif event.key == pygame.K_LEFT:
+                    self.nave.mover_esquerda = False
 
-            # CONTROLA A TAXA DE FRAMES POR SEGUNDO
-            self.clock.tick(60) # NESTE CASO ESTA CONFIGURADO PARA FUNCIONAR A 60 FRAMES POR SEGUNDO
+            def _atualiza_tela(self):
+                # PREENCHENDO A TELA COM A COR DE FUNDO
+                self.screen.fill(self.settings.bg_color)
+                self.nave.blitme()
+
+                # ATUALIZA A TELA
+                pygame.display.flip()
+
+                self._checar_eventos()
+                self._nave.update()
+                self._atualizar_tela()
+
+                # CONTROLA A TAXA DE FRAMES POR SEGUNDO
+                self.clock.tick(60) # NESTE CASO ESTA CONFIGURADO PARA FUNCIONAR A 60 FRAMES POR SEGUNDO
 
 if __name__ == '__main__':
     ia = InvasaoAlien()
