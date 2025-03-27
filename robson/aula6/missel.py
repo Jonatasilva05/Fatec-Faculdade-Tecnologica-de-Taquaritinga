@@ -16,3 +16,10 @@ class Missel(Sprite):
         self.rect.midtop = ia_game.nave.rect.midtop
 
         self.y = float(self.rect.y)
+
+    def update(self):
+        self.y -= self.settings.velocidade_missel
+        self.rect.y = self.y
+
+    def gerar_missel(self):
+        pygame.draw.rect(self.screen, self.color, self.rect)
