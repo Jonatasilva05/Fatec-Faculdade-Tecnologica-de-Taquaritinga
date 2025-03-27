@@ -58,6 +58,13 @@ class InvasaoAlien:
                 elif event.key == pygame.K_LEFT:
                     self.nave.mover_esquerda = False
 
+            def _atualiza_missel(self):
+                self.missel.update()
+                """Atualiza a posição dos misseis e remove os que sairam da tela"""
+                for missel in self.missel.copy():
+                    if missel.rect.bottom <= 0:
+                        self.missel.remove(missel)
+
             def _disparar_missel(self):
                 if len(self.missel) < self.settings.disparos_por_vez:
                     novo_missel = Missel(self)
@@ -66,6 +73,8 @@ class InvasaoAlien:
             def _atualiza_tela(self):
                 # PREENCHENDO A TELA COM A COR DE FUNDO
                 self.screen.fill(self.settings.bg_color)
+                for missel in self.missel.sprites():
+                    missel.gerar_missel()
                 self.nave.blitme()
 
                 # ATUALIZA A TELA
