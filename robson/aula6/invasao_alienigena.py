@@ -10,6 +10,8 @@ from settings import Settings
 
 from nave import Nave
 
+from missel import Missel
+
 # CRIA UMA classe CHAMADA InvasaoAlien
 class InvasaoAlien:
 
@@ -25,6 +27,7 @@ class InvasaoAlien:
         self.settings.altura_tela = self.screen.get_rect().height
         pygame.display.set_caption("Invasao Alien")
         self.nave = Nave(self)
+        self.missel = pygame.sprite.Group()
         self.bg_color = (230,230,230) # COLOCANDO COR DE FUNDO CINZA
 
 
@@ -46,12 +49,19 @@ class InvasaoAlien:
                     self.nave.mover_esquerda = True
                 elif event.key == pygame.K_q:
                     sys.exit()
+                elif event.key == pygame.K_SPACE:
+                    self._disparar_missel()
 
             def _checar_soltarteclas_eventos(self, event):
                 if event.key == pygame.K_RIGHT:
                     self.nave.mover_direita = False
                 elif event.key == pygame.K_LEFT:
                     self.nave.mover_esquerda = False
+
+            def _disparar_missel(self):
+                if len(self.missel) < self.settings.disparos_por_vez:
+                    novo_missel = Missel(self)
+                    self.missel.add(novo_missel)
 
             def _atualiza_tela(self):
                 # PREENCHENDO A TELA COM A COR DE FUNDO
@@ -63,6 +73,7 @@ class InvasaoAlien:
 
                 self._checar_eventos()
                 self._nave.update()
+                self._atualiza_missel()
                 self._atualizar_tela()
 
                 # CONTROLA A TAXA DE FRAMES POR SEGUNDO
