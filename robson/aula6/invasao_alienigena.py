@@ -20,6 +20,9 @@ class InvasaoAlien:
         self.settings = Settings()
         self.screen = pygame.display.set_mode((1200,800))
         self.screen = pygame.display.set_mode((self.settings.largura_tela, self.settings.altura_tela))
+        self.screen = pygame.display.set_mode((0,0),pygame.FULLSCREEN)
+        self.settings.largura_tela = self.screen.get_rect().width
+        self.settings.altura_tela = self.screen.get_rect().height
         pygame.display.set_caption("Invasao Alien")
         self.nave = Nave(self)
         self.bg_color = (230,230,230) # COLOCANDO COR DE FUNDO CINZA
