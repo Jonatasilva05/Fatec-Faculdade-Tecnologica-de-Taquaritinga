@@ -2,6 +2,7 @@ package app.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 import app.model.Livro;
 import app.singleton.Conexao;
@@ -15,6 +16,14 @@ public class LivroDao {
 
     public String salvar(Livro livro) {
         String sql = " INSERT INTO livro (titulo, editora, ano) VALUES (?, ?, ?); ";
-        PreparedStatement ps = this.con.prepareStatement(sql);
+        try {
+            PreparedStatement ps = this.con.prepareStatement(sql);
+            ps.setString(1, livro.getTitulo());
+            ps.setString(2, livro.getEditora());
+            ps.setInt(3, livro.getAno());
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 }
