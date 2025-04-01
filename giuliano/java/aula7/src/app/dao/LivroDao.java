@@ -21,9 +21,14 @@ public class LivroDao {
             ps.setString(1, livro.getTitulo());
             ps.setString(2, livro.getEditora());
             ps.setInt(3, livro.getAno());
+            ps.execute();
+            ps.close();
+            return "Livro Salvo";
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
+            return " Houve um erro! Tente Novamente";
+            // return " Houve um erro! Detalhes: "+ e.getMessage(); USAR ESSE METODO APENAS PARA DESENVOLVIMENTO
         }
     }
 }
