@@ -11,6 +11,11 @@
     </div>
 </section>
 
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
 <!-- Seção de Serviços -->
 <section id="servicos" class="py-5" style="background-color: white;">
   <div class="container">
