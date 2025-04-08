@@ -15,7 +15,8 @@ public class LivroDao {
     }
 
     public String salvar(Livro livro) {
-        String sql = " INSERT INTO livro (titulo, editora, ano) VALUES (?, ?, ?); ";
+        String sql = " INSERT INTO livro (titulo, editora, ano) "+
+                     " VALUES (?, ?, ?); ";
         try {
             PreparedStatement ps = this.con.prepareStatement(sql);
             ps.setString(1, livro.getTitulo());
@@ -23,12 +24,10 @@ public class LivroDao {
             ps.setInt(3, livro.getAno());
             ps.execute();
             ps.close();
-            return "Livro Salvo";
+            return "Livro salvo!";
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
-            return " Houve um erro! Tente Novamente";
-            // return " Houve um erro! Detalhes: "+ e.getMessage(); USAR ESSE METODO APENAS PARA DESENVOLVIMENTO
+            return "Houve um erro! Tente novamente!";
         }
     }
 }

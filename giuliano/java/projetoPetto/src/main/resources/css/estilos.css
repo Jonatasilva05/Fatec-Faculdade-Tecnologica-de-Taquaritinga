@@ -1,0 +1,87 @@
+.logo img {max-width:100%; height:auto;}
+.container {margin-top:50px;}
+.alerta {color:#721c24;display:block;}
+
+
+
+.card:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px); 
+    transition: all 0.3s ease-in-out;
+}
+
+footer h5, footer p {
+    color: #B0B0B0;
+}
+
+
+
+
+
+
+
+
+
+#formulario-contato {
+    background-color: #f9f9f9;  /* Fundo suave */
+    border-radius: 8px;         /* Borda arredondada para o formulário */
+    padding: 30px;              /* Espaçamento interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombras suaves para profundidade */
+}
+
+/* Títulos */
+#formulario-contato h2 {
+    font-size: 2rem;            /* Tamanho do título */
+    font-weight: 600;
+    color: #333;                /* Cor do título */
+    margin-bottom: 20px;        /* Espaçamento abaixo do título */
+}
+
+/* Campos do Formulário */
+#formulario-contato .form-control {
+    border-radius: 8px;         /* Borda arredondada nos campos */
+    border: 1px solid #ddd;     /* Cor suave para as bordas */
+    padding: 15px;              /* Preenchimento interno dos campos */
+    font-size: 1rem;            /* Tamanho da fonte */
+    transition: border-color 0.3s ease;  /* Transição suave nas bordas */
+}
+
+/* Foco nos Campos */
+#formulario-contato .form-control:focus {
+    border-color: #007bff;      /* Cor de foco mais intensa */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);  /* Efeito de foco */
+}
+
+/* Texto de Ajuda */
+.form-text {
+    font-size: 0.875rem;         /* Tamanho da fonte menor */
+    color: #6c757d;              /* Cor do texto de ajuda */
+}
+
+/* Botão de Enviar */
+#formulario-contato button {
+    background-color: #007bff;  /* Cor de fundo do botão */
+    color: white;                /* Cor do texto */
+    font-size: 1.1rem;           /* Tamanho da fonte do botão */
+    padding: 12px 25px;          /* Padding para o botão */
+    border: none;
+    border-radius: 8px;          /* Borda arredondada */
+    transition: background-color 0.3s ease;  /* Transição suave */
+}
+
+/* Efeito de Hover no Botão */
+#formulario-contato button:hover {
+    background-color: #0056b3;   /* Cor de fundo mais escura no hover */
+    cursor: pointer;             /* Cursor como ponteiro */
+}
+
+/* Feedback de Envio (Sucesso/Erro) */
+#feedback-mensagem {
+    margin-top: 20px;
+}
+
+.alert {
+    font-size: 1rem;
+    padding: 15px;
+    border-radius: 8px;
+}

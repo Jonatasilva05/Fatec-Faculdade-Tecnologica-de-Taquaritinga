@@ -1,24 +1,4 @@
-/* .logo {
-    background: #5a5a5a;
-    height: 231px;
-    margin: 56px 0 0 0;
-    text-align: center;
-}
-
-.logo img {
-    width: 100%;
-    height: 231px;
-} */
-
-.container {
-    margin-top: 50px;
-}
-
-.alerta {
-    color: #721c24;
-    display: block;
-}
-
-.btn-primary {
-    background: red !important;
-}
+.logo {background:#5a5a5a; height:231px; margin:56px 0 0 0; text-align:center;}
+.logo img {max-width:100%; height:auto;}
+.container {margin-top:50px;}
+.alerta {color:#721c24;display:block;}

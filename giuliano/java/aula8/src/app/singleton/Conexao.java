@@ -8,7 +8,7 @@ public class Conexao {
     private static Conexao instancia;
     private Connection connection;
     private String driver = "com.mysql.jdbc.Driver";
-    private String url = "jdbc:mysql://localost/ds2_livro";
+    private String url = "jdbc:mysql://localhost/ds2_livro";
     private String usuario = "root";
     private String senha = "";
 
@@ -17,7 +17,6 @@ public class Conexao {
             Class.forName(driver);
             connection = DriverManager.getConnection(url, usuario, senha);
         } catch (ClassNotFoundException | SQLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         return connection;
@@ -29,5 +28,4 @@ public class Conexao {
         }
         return instancia;
     }
-
 }
