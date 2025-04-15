@@ -1,0 +1,15 @@
+.logo img {max-width:100%; height:auto;}
+.container {margin-top:50px;}
+.alerta {color:#721c24;display:block;}
+
+
+
+.card:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px); 
+    transition: all 0.3s ease-in-out;
+}
+
+footer h5, footer p {
+    color: #B0B0B0;
+}
