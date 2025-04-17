@@ -9,7 +9,7 @@ class Missel(Sprite):
         self.settings = ia_game.settings
 
         # Carrega a imagem do míssil
-        self.imagem = pygame.image.load('imagens/missil.png')  # Certifique-se de que o caminho da imagem está correto
+        self.imagem = pygame.image.load('imagens/binar2.png')  # Certifique-se de que o caminho da imagem está correto
         self.rect = self.imagem.get_rect()  # Obtém o rect da imagem do míssil
         self.rect.midtop = ia_game.nave.rect.midtop  # Posiciona o míssil no topo da nave
 

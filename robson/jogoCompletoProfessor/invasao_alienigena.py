@@ -94,6 +94,10 @@ class InvasaoAlienigena:
             self.nave.mover_direita = True
         elif event.key == pygame.K_LEFT:
             self.nave.mover_esquerda = True
+        elif event.key == pygame.K_UP:  
+            self.nave.mover_cima = True
+        elif event.key == pygame.K_DOWN:
+            self.nave.mover_baixo = True
         elif event.key == pygame.K_q:
             sys.exit()
         elif event.key == pygame.K_SPACE:
@@ -104,6 +108,10 @@ class InvasaoAlienigena:
             self.nave.mover_direita = False
         elif event.key == pygame.K_LEFT:
             self.nave.mover_esquerda = False
+        elif event.key == pygame.K_UP:
+            self.nave.mover_cima = False
+        elif event.key == pygame.K_DOWN:
+            self.nave.mover_baixo = False
     
     def _disparar_missel(self):
         if len(self.missel) < self.settings.disparos_por_vez:
