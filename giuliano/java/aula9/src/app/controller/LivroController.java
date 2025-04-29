@@ -29,6 +29,6 @@ public class LivroController {
     public String listar(Model model) {
         LivroDao dao = new LivroDao();
         model.addAttribute("listaLivros", dao.listar())
-        return "l"        
+        return "listarlivro";        
     }
-}
+}
