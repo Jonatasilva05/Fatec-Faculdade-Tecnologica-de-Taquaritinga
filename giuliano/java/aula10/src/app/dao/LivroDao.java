@@ -41,7 +41,7 @@ public class LivroDao {
             PreparedStatement ps = this.con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
-                Livro livro = new.Livro();
+                Livro livro = new Livro();
                 livro.setCodigo(rs.getInt("codigo"));
                 livro.setTitulo(rs.getString("titulo"));
                 livro.setEditora(rs.getString("editora"));

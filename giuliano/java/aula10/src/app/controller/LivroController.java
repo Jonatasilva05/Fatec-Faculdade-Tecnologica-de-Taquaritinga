@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import app.dao.LivroDao;
 import app.model.Livro;
+import jakarta.servlet.http.HttpServletRequest;
 
 @Controller
 public class LivroController {
@@ -30,5 +31,10 @@ public class LivroController {
         LivroDao dao = new LivroDao();
         model.addAttribute("listaLivros", dao.listar());
         return "listarlivro";
+    }
+
+    @GetMapping("/alterarlivro")
+    public String alterarLivro(HttpServletRequest req, Model model) {
+        int codigo = Integer.parseInt(req.getParameter("codigo"));
     }
 }

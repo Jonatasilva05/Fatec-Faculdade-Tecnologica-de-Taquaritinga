@@ -12,6 +12,8 @@
 					<th>Titulo</th>
 					<th>Editora</th>
 					<th>Ano</th>
+					<th>Alterar</th>
+					<th>Excluir</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -21,6 +23,8 @@
 						<td>${livro.getTitulo()}</td>
 						<td>${livro.getEditora()}</td>
 						<td>${livro.getAno()}</td>
+						<td><a href="/alterarlivro?codigo=${livro.getCodigo()}">Alterar</a></td>
+						<td><a href="/excluirlivro?codigo=${livro.getCodigo()}">Excluir</a></td>
 					</tr>
 				</c:forEach>
 			</tbody>
