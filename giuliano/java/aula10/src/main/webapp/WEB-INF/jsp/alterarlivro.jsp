@@ -9,7 +9,7 @@
         <form:form action="/alterar" modelAttribute="livro">
             <div class="mb-3">
                 <label for="codigo" class="form-label">Código:</label>
-                <input type="number" class="form-control" disabled />
+                <input type="number" class="form-control" value="${livro.getCodigo()}" disabled />
                 <input type="hidden" name="codigo" value="${livro.getCodigo()}">
             </div>
             <div class="mb-3">

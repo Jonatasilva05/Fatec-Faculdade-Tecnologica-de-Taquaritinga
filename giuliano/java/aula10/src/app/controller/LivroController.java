@@ -36,5 +36,8 @@ public class LivroController {
     @GetMapping("/alterarlivro")
     public String alterarLivro(HttpServletRequest req, Model model) {
         int codigo = Integer.parseInt(req.getParameter("codigo"));
+        LivroDao dao = new LivroDao();
+        model.addAttribute("livro", dao.getLivroPorCodigo(codigo));
+        return "alterarlivro";
     }
 }

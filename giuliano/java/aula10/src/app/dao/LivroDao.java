@@ -54,4 +54,24 @@ public class LivroDao {
         }
         return listaLivros;
     }
+
+    public Livro getLivroPorCodigo(int codigo) {
+        Livro livro = new Livro();
+        String sql = " SELECT * FROM livro WHERE codigo = ? ";
+        try {
+            PreparedStatement ps = this.con.prepareStatement(sql);
+            ps.setInt(1, codigo);
+            ResultSet rs = ps.executeQuery();
+            rs.next();
+            livro.setCodigo(rs.getInt("codigo"));
+            livro.setTitulo(rs.getString("titulo"));
+            livro.setEditora(rs.getString("editora"));
+            livro.setAno(rs.getInt("ano"));
+            ps.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return livro;
+    }
 }
