@@ -83,4 +83,26 @@ public class LivroDao {
         }
         return livro;
     }
+    
+    public List<Livro> getLivroPorTitulo(String titulo) {
+        List<Livro> listaLivros = new ArrayList<>();
+        String sql = " SELECT * FROM livro WHERE titulo LIKE ? ";
+        try {
+            PreparedStatement ps = this.con.prepareStatement(sql);
+            ps.setString(1, "%" + titulo + "%");
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                Livro livro = new Livro();
+                livro.setCodigo(rs.getInt("codigo"));
+                livro.setTitulo(rs.getString("titulo"));
+                livro.setEditora(rs.getString("editora"));
+                livro.setAno(rs.getInt("ano"));
+                listaLivros.add(livro);
+            }
+            ps.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return listaLivros;
+    }
 }
