@@ -43,7 +43,7 @@ def main():
     fase = 1
     player_width, player_height = 40, 60
     player = pygame.Rect(100, HEIGHT//2, player_width, player_height)
-    player_img = pygame.transform.scale(JOGADOR_IMG_ORIGINAL, (player_width * 2, player_height * 2))  # *2 pq imagem > hitbox
+    player_img = pygame.transform.scale(JOGADOR_IMG_ORIGINAL, (player_width * 2, player_height * 2))  
 
     player_speed = 5
     rival = pygame.Rect(WIDTH - 140, HEIGHT//2, 40, 60)
@@ -77,10 +77,10 @@ def main():
             if event.type == pygame.QUIT:
                 run = False
 
-        # ⏱ Aumento gradual da velocidade da bola + redução do jogador
+        
         tempo_atual = pygame.time.get_ticks()
         if tempo_atual - tempo_ultimo_aumento >= 3000:
-            # Aumenta velocidade da bola
+            
             ball_vel[0] *= 1.1
             ball_vel[1] *= 1.1
 
@@ -90,16 +90,16 @@ def main():
                 player_height -= 2
 
 
-            # Aumenta velocidade do jogador
+            
             player_speed += 0.3
 
-            # Recalcula posição para manter o centro
+            
             center = player.center
             player.width = player_width
             player.height = player_height
             player.center = center
 
-            # Redimensiona imagem
+            
             player_img = pygame.transform.scale(JOGADOR_IMG_ORIGINAL, (player_width * 2, player_height * 2))
 
             tempo_ultimo_aumento = tempo_atual
@@ -110,31 +110,31 @@ def main():
         if keys[pygame.K_DOWN] and player.y + player.height < HEIGHT:
             player.y += int(player_speed)
 
-        # IA
+        
         if rival.centery < ball.centery:
             rival.y += 3 + fase
         elif rival.centery > ball.centery:
             rival.y -= 3 + fase
 
-        # Movimento da bola
+        
         ball.x += int(ball_vel[0])
         ball.y += int(ball_vel[1])
 
-        # Rebote
+        
         if ball.top <= 0 or ball.bottom >= HEIGHT:
             ball_vel[1] *= -1
 
-        # Colisão com jogador
+        
         if player.colliderect(ball):
             ball_vel[0] = abs(ball_vel[0])
             ball_vel[1] = random.randint(-5, 5)
 
-        # Colisão com rival
+        
         if rival.colliderect(ball):
             ball_vel[0] = -abs(ball_vel[0])
             ball_vel[1] = random.randint(-5, 5)
 
-        # Gol do rival
+        
         if ball.left <= 10:
             if HEIGHT//2 - 50 < ball.centery < HEIGHT//2 + 50:
                 placar_rival += 1
@@ -152,7 +152,7 @@ def main():
                 ball.left = 10
                 ball_vel[0] *= -1
 
-        # Gol do jogador
+        
         if ball.right >= WIDTH - 10:
             if HEIGHT//2 - 50 < ball.centery < HEIGHT//2 + 50:
                 placar += 1
