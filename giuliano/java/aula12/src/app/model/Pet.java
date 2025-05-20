@@ -12,6 +12,7 @@ import lombok.Setter;
 public class Pet {
     private int codigo;    
     private String nome;
+    private double valor;
     private String telefone;
     private String nomepet;
 }
