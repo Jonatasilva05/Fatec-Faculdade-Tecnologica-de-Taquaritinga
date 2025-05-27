@@ -112,8 +112,10 @@ public class LivroDao {
             ps.setInt(1, codigo);
             ps.execute();
             ps.close();
+            return "Livro excluido!";
         } catch (SQLException e) {
             e.printStackTrace();
+            return "Houve um erro, Tente novamente!";
         }
     }
 }

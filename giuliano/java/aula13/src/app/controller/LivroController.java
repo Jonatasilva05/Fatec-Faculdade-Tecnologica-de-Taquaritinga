@@ -57,4 +57,13 @@ public class LivroController {
         // model.addAttribute("listaLivros", dao.listar());
         return "listarlivro";
     }
+
+    @GetMapping("/excluir")
+    public String excluir(HttpServletRequest req, Model model) {
+        int codigo = Integer.parseInt(req.getParameter("codigo"));
+        LivroDao dao = new LivroDao();
+        model.addAttribute("mensagem", dao.excluir(codigo));
+        return "mensagem";
+    }
+
 }
