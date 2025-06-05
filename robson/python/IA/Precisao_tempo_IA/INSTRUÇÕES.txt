@@ -1,0 +1,18 @@
+ATUALIZAR O PIP
+python -m pip install --upgrade pip
+
+INSTALAR A BIBLIOTECA PYGAME
+python -m pip install --user pygame //SE TIVER MAIS DE UM USUARIO NESSE CASO ELE IRÁ FAZER A INSTALAÇÃO "GLOBAL" OU SEJA PARA TODOS OS USUARIOS
+OU
+pip install pygame
+
+CRIAR UM AMBIENTE VIRTUAL
+python -m venv venv
+
+ATIVAR AMBIENTE VIRTUAL
+source venv/Scripts/Activate
+
+INSTALAR VARIAS BIBLIOTECAS DE UMA SÓ VEZ
+-criar um arquivo requirements.txt e dentro coloque o nome da biblioteca ex: pandas, numpy
+-depois execute 
+    |-> pip install -r requirements.txt

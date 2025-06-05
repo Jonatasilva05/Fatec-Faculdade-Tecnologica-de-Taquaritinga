@@ -7,7 +7,7 @@ OU
 pip install pygame
 
 CRIAR UM AMBIENTE VIRTUAL
-
+python -m venv venv
 
 ATIVAR AMBIENTE VIRTUAL
 source venv/Scripts/Activate

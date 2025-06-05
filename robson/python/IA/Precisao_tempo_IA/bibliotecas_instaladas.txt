@@ -1,0 +1,8 @@
+pip install Numpy 
+    |-> Serve para realizar cálculos numéricos e matemáticos em larga escala, essencial para áreas como ciência de dados, aprendizado de máquina e computação científica. Ela fornece suporte para arrays multidimensionais e uma vasta coleção de funções matemáticas e estatísticas para operar eficientemente nestes arrays
+    
+pip install TensorFlow
+    |-> Serve para criar visualizações de dados, como gráficos e diagramas, de forma simples e eficaz. Ela permite gerar uma vasta gama de tipos de gráficos, incluindo gráficos de linha, barras, dispersão, histogramas, gráficos de pizza e outros, sendo uma ferramenta fundamental para a análise e apresentação de dados. 
+
+pip install matplotlib
+    |-> Serve para criar visualizações de dados, como gráficos e diagramas, de forma simples e eficaz. Ela permite gerar uma vasta gama de tipos de gráficos, incluindo gráficos de linha, barras, dispersão, histogramas, gráficos de pizza e outros, sendo uma ferramenta fundamental para a análise e apresentação de dados. 
