@@ -24,7 +24,7 @@
 						<td>${livro.getEditora()}</td>
 						<td>${livro.getAno()}</td>
 						<td><a href="/alterarlivro?codigo=${livro.getCodigo()}">Alterar</a></td>
-						<td><a href="/excluirlivro?codigo=${livro.getCodigo()}">Excluir</a></td>
+						<td><a href="#" class="excluir" rel="$(livro.getCodigo)">Excluir</a></td>
 					</tr>
 				</c:forEach>
 			</tbody>
