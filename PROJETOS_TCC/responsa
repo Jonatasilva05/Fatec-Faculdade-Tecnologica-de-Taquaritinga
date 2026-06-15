@@ -1,0 +1,819 @@
+@media (max-width: 700px) {
+    .spaceHeaderMain {
+        height: 175px;
+        background: #36015D;
+    }
+
+    #main-header .navbar.navbar.fixed-top {
+        background: #36015D;
+    }
+    #main-header .navbar.navbar.fixed-top .container-fluid .navbar-brand img {
+        height: 140px;
+    }
+    #main-header .navbar.navbar.fixed-top .container-fluid .navbar-toggler {
+        background: #fff;
+    }
+    .offcanvas.offcanvas-end.text {
+        background: #36015D;       /*COR DE ANTES #050A30*/
+    }
+    .dropdown-menu.dropdown-menu {
+        background: #fff;
+    }
+    #main-header .navbar.navbar.fixed-top .container-fluid #offcanvasDarkNavbarLabel img {
+        height: 140px;
+    }
+    #main-header .navbar.navbar.fixed-top .container-fluid .offcanvas-header .btn-close {
+        font-size: 30px;
+    }
+    #main-header .navbar.navbar.fixed-top .container-fluid .offcanvas-body .nav-link,
+    #main-header .navbar.navbar.fixed-top .container-fluid .offcanvas-body .nav-link.dropdown-toggle {
+        font-size: 25px;
+        color: #fff;
+    }
+    #main-header .navbar.navbar.fixed-top .container-fluid .dropdown-item {
+        font-size: 20px;
+    }
+    #main-header .navbar.navbar.fixed-top .container-fluid .d-flex.mt-3 .btn.btn-success {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    /***MAIN***/
+    #main-body #containerTextCenterOne {
+        background: linear-gradient(to bottom, #36015D 5%, #561E7F 60%, #8346AF 85%, #A060CE 100%);
+    }
+    #main-body #containerTextCenterOne .row .col {
+        color: #fff;
+    }
+    #main-body #containerTextCenterOne .row .col .quebraLinha {
+        
+    }
+    #main-body #containerTextCenterOne .row .col #linhaVolta2respon {
+        display: block;
+    }
+    #main-body #containerTextCenterOne .row .col .quebraLinhaNone {
+        display: none;
+    }
+    #main-body #containerTextCenterOne .row #divImgZoetwo img {
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    #main-body #containerTextCenterOne .row .col .textMain-container {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        margin-left: 20px;
+        font-family: Montserrat;
+        text-align: left;
+        font-weight: bolder;
+    }
+    #main-body #containerTextCenterOne .row .col .textMain-containerP{
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 25px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-family: Montserrat;
+    }
+
+    #main-body #containerTextCenterOne .row .col .textMain-containerP .saibaMais {
+        margin: 25px 0;
+        border: none;
+        color: #fff;
+        background: #561E7F;
+        padding: 15px;
+        width: 161px;
+        border-radius: 30px;
+        font-family: Montserrat;
+    }
+
+    #main-body #containerTextCenterOne #rowCardsModify {
+        display: none;
+    }
+
+    #containerTextCenterOne #rowCards #cardInformationOne img,
+    #containerTextCenterOne #rowCards #cardInformationSecond img {
+        height: 90px;
+    }
+
+    section #containerTextCenterSecond  #imgLogoSerenusColTwo img {
+        height: 150px;
+        margin: 25px 0;
+        animation: animaImgLogoTwo 5.5s ease infinite;
+    }
+
+    @keyframes animaImgLogoTwo {
+        0%, 100% {
+        transform: scale(1);
+        }
+        50% {
+        transform: scale(1.4);
+        }
+    }
+
+    #containerTextCenterOne #rowCards .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    #containerTextCenterOne #rowCards .card-text {
+        font-size: 18px;
+    }
+
+    #containerTextCenterSecond #titleInfoMain h1 {
+        margin-top: 30px;
+    }
+
+    #containerTextCenterThree #imgMulherContThree img {
+        height: 150px;
+    }
+
+    #containerTextCenterThree #rowImgMulherTexto {
+        display: flex;
+        align-items: center;
+    }
+
+    #containerTextCenterThree #colText1 .textoPosImagem {
+        text-align: justify;
+        width: 235px;
+    }
+
+    #containerTextCenterThree #imagemHomemTextoPrime {
+        display: none;
+    }
+
+    #containerTextCenterThree #imgHomemContThree img {
+        height: 150px;
+    }
+
+    #containerTextCenterThree #rowImgSecondTex {
+        display: flex;
+        align-items: center;
+    }
+
+    #rowImgSecondTex #colText2 .textoPosImagem {
+        text-align: justify;
+        width: 250px;
+    }
+
+    #containerTextCenterFour #titleColAutoContFour h1 {
+        margin: 40px 0;
+    }
+
+    #containerTextCenterFour #paragrafContFour p {
+        text-align: justify;
+        width: 93%;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+    #containerTextCenterFour .row.justify-content-md-center #paragrafContFour ul {
+        list-style-type: none;
+    }
+
+    #containerTextCenterFour .row.justify-content-md-center #paragrafContFour ul li {
+        position: relative;
+        text-align: left;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    #containerTextCenterFour .row.justify-content-md-center #paragrafContFour ul li::before {
+        content: "-";
+        position: absolute;
+        left: -20px;
+        bottom: -1px;
+        width: 20px;
+        text-align: right;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #cardSectionSecond #colCardInfoSection .titleCardInfo h2 {
+        margin: 25px 0;
+    }
+
+    #sectionSecond #cardSectionSecond {
+        background: #c9c9c9ea;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+    #rowInfo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bolNumber {
+        height: 110px;
+        width: 110px;
+        background: #8346AF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid #A060CE;
+        border-radius: 1000px;
+        font-size: 45px;
+        font-family: lora;
+        font-weight: bold;
+        color: #fff;
+        margin: 0 auto;
+    }
+
+    #autoFisico,
+    #autoEmocio,
+    #autoSocial,
+    #autoMental,
+    #autoEspirit,
+    #autoProfiss,
+    #autoLudico {
+        width: 350px;
+    }
+
+    #autoFisico h3,
+    #autoEmocio h3,
+    #autoSocial h3,
+    #autoMental h3,
+    #autoEspirit h3,
+    #autoProfiss h3,
+    #autoLudico h3 {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    #autoFisico ul>li,
+    #autoEmocio ul>li,
+    #autoSocial ul>li,
+    #autoMental ul>li,
+    #autoEspirit ul>li,
+    #autoProfiss ul>li,
+    #autoLudico ul>li {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    #autoFisico ul>li span,
+    #autoEmocio ul>li span,
+    #autoSocial ul>li span,
+    #autoMental ul>li span,
+    #autoEspirit ul>li span,
+    #autoProfiss ul>li span,
+    #autoLudico ul>li span {
+        font-weight: bold;
+    }
+
+    footer {
+        background: #561E7F;
+        color: #fff;
+    }
+
+    footer .container.text-center #rowPrimary #colFooter img {
+        height: 100px;
+        margin: 25px 0;
+    }
+
+    footer .container.text-center #rowPrimary #colFooter .footerP {
+        display: none;
+    }
+
+    .footerTwoP span {
+        font-weight: bold;
+    }
+
+    #menuFooter {
+        text-align: left;
+        padding-left: 41%;
+        margin: 20px 0;
+    }
+
+    #menuFooter a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #contatoFooter {
+        padding-left: 20%;
+    }
+
+    #contatoFooter h4 {
+        position: relative;
+        margin-bottom: 30px;
+        left: -40px;
+    }
+
+    #contatoFooter label,
+    #contatoFooter input {
+        height: 50px;            
+        margin-bottom: 30px;
+    }
+
+    #contatoFooter label {
+        border: none;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        width: 80px;
+        background: #36015D;
+    }
+
+    #contatoFooter input {
+        border: none;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    #contatoFooter label img {
+        height: 50px;
+    }
+
+    .enviarMsg {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    #cardTextPrimaryFooter {
+        display: none;
+    }
+
+    .cardResponsiveFooter {
+        
+    }
+
+    .spaceConttFooter {
+        height: 80px;
+        background: transparent;
+    }
+
+    .contatoFooterEmergency {
+        text-align: left;
+        margin-left: 10%;
+    }
+
+    .contatoFooterEmergency p span {
+        font-weight: bold;
+    }
+
+    #cardTextSecondFooter {
+        background: #36015D;
+    }
+
+    #cardTextSecondFooter a {
+        letter-spacing: 45px;
+        text-decoration: none;
+    }
+
+    #cardTextSecondFooter p {
+        color: #fff;
+        margin: 65px 0;
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+    .spacePonti {
+        border-top: 8px dotted #36015D;
+        width: 80%;
+        background: transparent;
+        margin: 45px 0;
+    }
+
+    .quebraEntreBolText {
+        height: 30px;
+        background: transparent;
+    }
+
+    .spaceParaContainer5e6 {
+        height: 25px;
+    }
+
+    .spaceEntre2Row{
+        height: 60px;
+    } 
+    .spaceImgMulherHomem {
+        display: none;
+    }
+    .spaceParaRowDoContainer2e3 {
+        display: none;
+    }
+
+    .spaceTextImg {
+        display: none;
+    }
+
+    .spaceParaContainer2e3 {
+        display: none;
+    }
+
+    .col .card{
+        width: 220px;
+        margin: 0 auto;
+        height: 360px;
+    }
+
+    .spaceEntreCards {
+        display: none;
+    }
+
+    .spaceMeioCard {
+        height: 50px;
+        background: transparent;
+    }
+
+    .spaceMainFooter {
+        height: 80px;
+        background: #fff;
+        margin: 25px 0;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (max-width:500px) {
+        #containerTextCenterOne #rowCards .spaceEntreCards {
+          display: block;
+          height: 100px;
+          background: transparent;
+        }
+        #containerTextCenterOne #rowCards .col #cardInformationOne,
+        #containerTextCenterOne #rowCards .col #cardInformationSecond {
+          margin: 0 auto;
+          width: 80%;
+          border-radius: 35px;
+        }
+        #containerTextCenterOne #rowCards .col #cardInformationOne h5,
+        #containerTextCenterOne #rowCards .col #cardInformationSecond h5 {
+          font-weight: bolder;
+          font-size: 35px;
+        }
+        #containerTextCenterOne #rowCards .col #cardInformationOne p,
+        #containerTextCenterOne #rowCards .col #cardInformationSecond p {
+          font-size: 25px;
+        }
+        #containerTextCenterOne #rowCards .col #cardInformationOne img,
+        #containerTextCenterOne #rowCards .col #cardInformationSecond img {
+          margin-top: 15px;
+          height: 100px;
+          animation: animaImg 4s ease infinite;
+        }
+        @keyframes animaImg {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50%{
+            transform: scale(1.3);
+          }
+        }
+        #containerTextCenterOne #rowCardsModify {
+          display: none;
+        }
+        #containerTextCenterOne .spaceMeioCard {
+          height: 80px;
+          background: transparent;
+        }
+        section #containerTextCenterSecond #titleInfoMain {
+          font-family: Montserrat;
+          margin-top: 50px;
+        }
+        section #containerTextCenterSecond  #imgLogoSerenusColTwo {
+          
+        }
+        section #containerTextCenterSecond  #imgLogoSerenusColTwo img {
+          height: 150px;
+          animation: animaImgLogoTwo 5.5s ease infinite;
+        }
+        
+        @keyframes animaImgLogoTwo {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.6);
+          }
+        }
+        #containerTextCenterThree .row #imgMulherContThree img {
+          height: 210px;
+          width: 350px;
+        }
+    
+        #containerTextCenterThree #colText1 p {
+          font-size: 20px;
+          width: 400px;
+          margin: 0 auto;
+        }
+    
+        #containerTextCenterThree .imagemHomemTexto {
+          height: 210px;
+          width: 350px;
+          margin: 60px 0;
+        }
+    
+        #containerTextCenterThree .row #imgHomemContThree img {
+          display: none;
+        }
+    
+        #containerTextCenterThree .row #colText2 p {
+          font-size: 20px;
+          width: 400px;
+          margin: 0 auto;
+        }
+    
+        #containerTextCenterFour #titleColAutoContFour h1 {
+          font-family: Montserrat;
+          font-weight: bold;
+        }
+    
+        #containerTextCenterFour .row.justify-content-md-center #paragrafContFour p {
+          font-size: 20px;
+          width: 400px;
+          margin: 0 auto;
+          text-align: justify;
+        }
+      
+        #containerTextCenterFour .row.justify-content-md-center #paragrafContFour ul {
+          list-style-type: none;
+          padding-left: 20px;
+        }
+    
+        #containerTextCenterFour .row.justify-content-md-center #paragrafContFour ul li {
+          position: relative;
+          font-size: 18px;
+        }
+    
+        #containerTextCenterFour .row.justify-content-md-center #paragrafContFour ul li::before {
+          content: "-";
+          position: absolute;
+          left: -20px;
+          bottom: -1px;
+          width: 20px;
+          text-align: right;
+          font-size: 20px;
+          font-weight: bold;
+        }
+    
+        #sectionSecond #cardSectionSecond {
+          background: #c9c9c9ea;
+          border-top-left-radius: 50px;
+          border-top-right-radius: 50px;
+        }
+    
+        #sectionSecond #cardSectionSecond .col-md-auto .cardInfoSection .titleCardInfo h2 {
+          margin-top: 50px;
+        }
+    
+        #rowInfo {
+          display: flex;
+          justify-content: center;
+        }
+    
+        .bolNumber {
+          height: 110px;
+            width: 110px;
+            background: #8346AF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 10px solid #A060CE;
+            border-radius: 1000px;
+            font-size: 45px;
+            font-family: lora;
+            font-weight: bold;
+            color: #fff;
+            margin: 0 auto;
+        }
+    
+        #autoFisico,
+        #autoEmocio,
+        #autoSocial,
+        #autoMental,
+        #autoEspirit,
+        #autoProfiss,
+        #autoLudico {
+          width: 350px;
+        }
+    
+        #autoFisico h3,
+        #autoEmocio h3,
+        #autoSocial h3,
+        #autoMental h3,
+        #autoEspirit h3,
+        #autoProfiss h3,
+        #autoLudico h3 {
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+    
+        #autoFisico ul>li,
+        #autoEmocio ul>li,
+        #autoSocial ul>li,
+        #autoMental ul>li,
+        #autoEspirit ul>li,
+        #autoProfiss ul>li,
+        #autoLudico ul>li {
+          font-size: 18px;
+          text-align: left;
+        }
+    
+        #autoFisico ul>li span,
+        #autoEmocio ul>li span,
+        #autoSocial ul>li span,
+        #autoMental ul>li span,
+        #autoEspirit ul>li span,
+        #autoProfiss ul>li span,
+        #autoLudico ul>li span {
+          font-weight: bold;
+        }
+    
+        footer {
+          background: #561E7F;
+          color: #fff;
+        }
+    
+        footer .container.text-center #rowPrimary #colFooter img {
+          height: 100px;
+        }
+    
+        footer .container.text-center #rowPrimary #colFooter .footerP {
+          display: none;
+        }
+    
+        .footerTwoP span {
+          font-weight: bold;
+        }
+    
+        #menuFooter {
+          text-align: left;
+          padding-left: 41%;
+          margin: 20px 0;
+        }
+    
+        #menuFooter a {
+          text-decoration: none;
+          color: #fff;
+        }
+    
+        #contatoFooter {
+          padding-left: 20%;
+        }
+    
+        #contatoFooter h4 {
+          position: relative;
+          margin-bottom: 30px;
+          left: -40px;
+        }
+    
+        #contatoFooter label,
+        #contatoFooter input {
+          height: 50px;            
+          margin-bottom: 30px;
+        }
+    
+        #contatoFooter label {
+            border: none;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            width: 80px;
+            background: #36015D;
+        }
+    
+        #contatoFooter input {
+            border: none;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+        
+        #contatoFooter label img {
+            height: 50px;
+        }
+    
+        .enviarMsg {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+    
+        #cardTextPrimaryFooter {
+          display: none;
+        }
+    
+        .cardResponsiveFooter {
+          
+        }
+    
+        .spaceConttFooter {
+          height: 80px;
+          background: transparent;
+        }
+    
+        .contatoFooterEmergency {
+          text-align: left;
+          margin-left: 10%;
+        }
+    
+        .contatoFooterEmergency p span {
+          font-weight: bold;
+        }
+    
+        #cardTextSecondFooter {
+          background: #36015D;
+        }
+    
+        #cardTextSecondFooter a {
+          letter-spacing: 45px;
+          text-decoration: none;
+        }
+    
+        #cardTextSecondFooter p {
+          color: #fff;
+          margin: 65px 0;
+          font-size: 20px;
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        .spaceParaRowDoContainer2e3 {
+          height: 30px;
+          background: transparent;
+        }
+        
+        .spaceParaContainer2e3 {
+          height: 60px;
+          background: transparent;
+        }
+    
+        .spaceImgMulherHomem {
+          height: 60px;
+          background: transparent;
+        }
+    
+        .spaceParaContainer5e6 {
+          height: 150px;
+          background: #fff;
+        }
+    
+        .quebraEntreBolText {
+          height: 20px;
+          background: transparent;
+        }
+        
+        .spacePonti {
+          border-top: 3px dotted #36015D;
+          width: 60%;
+          background: transparent;
+        }
+    
+        .spaceQuebraFooter {
+          display: block;
+          opacity: 0;
+        }
+    
+        .spaceMainFooter {
+          height: 25px;
+          background: #561E7E;
+        }
+    
+        .circleMedio1 {
+          /*
+          height: 150px;
+          width: 80px;
+          position: absolute;
+          right: 0px;
+          background: #A060CE;
+          transform: translateY(-5%);
+          border-top-left-radius: 1000px;
+          border-bottom-left-radius: 1000px;
+          z-index: -1000;
+          */
+          display: none;
+        }
+    
+    
+    
+        .circleGrande1 {
+          display: none;
+        }
+      }
+}

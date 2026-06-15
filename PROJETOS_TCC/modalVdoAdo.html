@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal com Vídeo e Música</title>
+  <style>
+    /* Estilos gerais */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    /* Estilos do modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    .modal video {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .close-btn {
+      background: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Botão para abrir o modal -->
+  <button id="openModalBtn">Abrir Modal</button>
+
+  <!-- Modal -->
+  <div class="modal" id="videoModal">
+    <div class="modal-content">
+      <video id="videoPlayer" muted autoplay loop>
+        <source src="./IMG/VIDEOS/chuvaCaindo.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+      <br>
+      <button id="fullscreenBtn">Tela Cheia</button>
+      <button id="toggleMusicBtn">Pausar Música</button>
+      <br>
+      <button class="close-btn" id="closeModalBtn">Fechar</button>
+    </div>
+  </div>
+
+  <!-- Música -->
+  <audio id="musicPlayer">
+    <source src="./atos2.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+
+  <script>
+    const openModalBtn = document.getElementById('openModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const videoModal = document.getElementById('videoModal');
+    const musicPlayer = document.getElementById('musicPlayer');
+    const videoPlayer = document.getElementById('videoPlayer');
+    const fullscreenBtn = document.getElementById('fullscreenBtn');
+    const toggleMusicBtn = document.getElementById('toggleMusicBtn');
+
+    let isMusicPlaying = true;
+
+    // Abrir o modal
+    openModalBtn.addEventListener('click', () => {
+      videoModal.style.display = 'flex';
+      musicPlayer.currentTime = 0; // Reinicia o áudio para o início
+      musicPlayer.play(); // Reproduz o áudio automaticamente
+      isMusicPlaying = true;
+      toggleMusicBtn.textContent = 'Pausar Música';
+    });
+
+    // Fechar o modal
+    closeModalBtn.addEventListener('click', () => {
+      videoModal.style.display = 'none';
+      musicPlayer.pause(); // Pausa o áudio
+      musicPlayer.currentTime = 0; // Reinicia o áudio
+    });
+
+    // Alternar tela cheia do vídeo
+    fullscreenBtn.addEventListener('click', () => {
+      if (videoPlayer.requestFullscreen) {
+        videoPlayer.requestFullscreen();
+      } else if (videoPlayer.webkitRequestFullscreen) {
+        videoPlayer.webkitRequestFullscreen();
+      } else if (videoPlayer.mozRequestFullScreen) {
+        videoPlayer.mozRequestFullScreen();
+      } else if (videoPlayer.msRequestFullscreen) {
+        videoPlayer.msRequestFullscreen();
+      }
+    });
+
+    // Alternar reprodução/pausa da música
+    toggleMusicBtn.addEventListener('click', () => {
+      if (isMusicPlaying) {
+        musicPlayer.pause();
+        toggleMusicBtn.textContent = 'Reproduzir Música';
+      } else {
+        musicPlayer.play();
+        toggleMusicBtn.textContent = 'Pausar Música';
+      }
+      isMusicPlaying = !isMusicPlaying;
+    });
+
+    // Configurações do vídeo para loop contínuo perfeito
+    videoPlayer.addEventListener('ended', () => {
+      videoPlayer.currentTime = 0; // Retorna ao início
+      videoPlayer.play(); // Continua a reprodução automaticamente
+    });
+  </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colunas Responsivas com Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            max-width: 1200px;
+        }
+
+        .card {
+            width: 300px;
+            height: 600px;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            background: #fff;
+        }
+
+        .card:hover {
+            box-shadow: -4px -4px 10px #fff, 4px 4px 20px rgba(0, 0, 0, 0.15), inset 4px 4px 20px rgba(0, 0, 0, 0.15), inset -4px -4px 10px #fff;
+        }
+
+        .video {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.6) 80%);
+            opacity: 1;
+            margin-top: 30px;
+            padding: 15px;
+            transition: 2s;
+        }
+
+        .title {
+            font-size: 24px;
+            text-align: center;
+            text-transform: capitalize;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .resumeVdo {
+            display: none;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+            margin: 10px 0;
+        }
+
+        .card:hover .resumeVdo {
+            display: block;
+        }
+
+        .btn {
+            width: 120px;
+            height: 40px;
+            font-size: 16px;
+            background: #fff;
+            border-radius: 10px;
+            text-transform: capitalize;
+            border: none;
+            margin: 35px 0;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #f2f2f2;
+        }
+
+        .card:hover .content {
+            margin-top: 0;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .modal video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .close-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <!--CARD 1-->
+            <div class="card">
+                <video src="./IMG/VIDEOS/chuvaCaindo.mp4" class="video" loop muted></video>
+                <div class="content">
+                    <h1 class="title">Chuva</h1>
+                    <p class="resumeVdo">"Relaxe com o som da chuva..."</p>
+                    <button class="btn" id="openModal1">Modal</button>
+                </div>
+            </div>
+            <!--CARD 2-->
+            <div class="card">
+                <video src="./IMG/VIDEOS/cidade.mp4" class="video" loop muted></video>
+                <div class="content">
+                    <h1 class="title">Cidade</h1>
+                    <p class="resumeVdo">"Relaxe com a calmaria da cidade..."</p>
+                    <button class="btn" id="openModal2">Modal</button>
+                </div>
+            </div>
+            <!-- Outros Cards... -->
+
+            <!-- MODAL 1 -->
+            <div class="modal" id="modal1">
+                <div class="modal-content">
+                    <video src="./IMG/VIDEOS/chuvaCaindo.mp4" muted autoplay loop id="videoModal1">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                    <audio src="./AUDIO/chuva.mp3" id="audioModal1" loop></audio>
+                    <button class="close-btn" id="closeModal1">Fechar</button>
+                </div>
+            </div>
+
+            <!-- MODAL 2 -->
+            <div class="modal" id="modal2">
+                <div class="modal-content">
+                    <video src="./IMG/VIDEOS/cidade.mp4" muted autoplay loop id="videoModal2">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                    <audio src="./AUDIO/cidade.m4a" id="audioModal2" loop></audio>
+                    <button class="close-btn" id="closeModal2">Fechar</button>
+                </div>
+            </div>
+
+            <!-- Outros modais... -->
+        </div>
+    </main>
+
+    <script>
+        // Modal 1
+        document.getElementById('openModal1').addEventListener('click', function () {
+            document.getElementById('modal1').style.display = 'flex';
+            document.getElementById('audioModal1').play();
+        });
+
+        document.getElementById('closeModal1').addEventListener('click', function () {
+            document.getElementById('modal1').style.display = 'none';
+            document.getElementById('audioModal1').pause();
+            document.getElementById('audioModal1').currentTime = 0;
+        });
+
+        // Modal 2
+        document.getElementById('openModal2').addEventListener('click', function () {
+            document.getElementById('modal2').style.display = 'flex';
+            document.getElementById('audioModal2').play();
+        });
+
+        document.getElementById('closeModal2').addEventListener('click', function () {
+            document.getElementById('modal2').style.display = 'none';
+            document.getElementById('audioModal2').pause();
+            document.getElementById('audioModal2').currentTime = 0;
+        });
+
+        // Adicione funções semelhantes para outros modais...
+    </script>
+</body>
+</html>

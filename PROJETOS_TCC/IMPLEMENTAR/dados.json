@@ -1,0 +1,6 @@
+{
+    "categorias": {
+        "animal": ["cat","tes","sas"],
+        "test": ["te","tere","tut"]
+    }
+}

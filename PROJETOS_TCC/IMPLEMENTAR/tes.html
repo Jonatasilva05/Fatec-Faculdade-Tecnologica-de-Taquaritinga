@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="speak">texto</button>
+
+    <script>
+        async function fetchAndSpeak(){
+            const resp = await fetch('t.json');
+            const dat = await resp.json();
+            
+            const testoSpeak = dat.texto;
+
+            const utterance = new SpeechSynthesisUtterance(testoSpeak);
+            utterance.lang = 'pt-BR';
+            window.speechSynthesis.speak(utterance);
+        }
+
+        document.querySelector('#speak').addEventListener('click',fetchAndSpeak);
+    </script>
+
+</body>
+</html>

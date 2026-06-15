@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.card {
+    width: 300px;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    background: #fff;
+}
+
+.card:hover {
+    box-shadow: -4px -4px 10px #fff, 4px 4px 20px rgba(0, 0, 0, 0.15), inset 4px 4px 20px rgba(0, 0, 0, 0.15), inset -4px -4px 10px #fff;
+}
+
+.video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.6) 80%);
+    opacity: 1;
+    margin-top: 30px;
+    padding: 15px;
+    transition: 2s;
+}
+
+.title {
+    font-size: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #fff;
+}
+
+.resumeVdo {
+    display: none;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.card:hover .resumeVdo {
+    display: block;
+}
+
+.btn {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    background: #fff;
+    border-radius: 10px;
+    text-transform: capitalize;
+    border: none;
+    margin: 35px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #f2f2f2;
+}
+
+.card:hover .content {
+    margin-top: 0;
+}
+
+@media (min-width: 576px) {
+    .card {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        flex: 1 1 calc(33.333% - 40px);
+    }
+}

@@ -1,0 +1,1976 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*CORPO DA PAGINA PARA DESKTOP*/
+
+body {
+    background: #36015D;
+}
+
+.hide-on-scroll {
+    transform: translateX(-150%);
+}
+
+.navbar.navbar.fixed-top,
+.offcanvas.offcanvas-end.text {
+    background: #36015D; /*COR DE ANTES #050A30*/
+}
+
+.dropdown-menu.dropdown-menu {
+    background: #5b6294;
+}
+
+.navbar-toggler{
+    margin-right: 70px;
+    border-radius: 10px;
+    height: 60px;
+    width: 70px;
+    background: #fff;
+    font-size: 1.7rem;
+}
+
+.navbar.navbar.fixed-top,
+.offcanvas.offcanvas-end.text,
+.navbar.navbar.fixed-top a {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.offcanvas-header .btn-close {
+    font-size: 40px;
+}
+
+.offcanvas-title {
+    width: 220px;
+    height: 120px;
+}
+
+.navbar.navbar.fixed-top a img {
+    height: 150px;
+    width: 220px;
+    position: relative;
+    left: 40%;
+}
+
+.navbar.navbar.fixed-top .offcanvas-header h5 img {
+    height: 100%;
+    width: 100%;
+}
+
+.form-control.me-2 {
+    font-size: 1.4rem; 
+}
+.d-flex.mt-3 button {
+    font-size: 1.4rem; 
+}
+
+.dropdown-item:hover{
+    background: #003a92;
+}
+
+main {
+    background: linear-gradient(to bottom, #36015D 25%, #A060CE 100%);
+    color: #fff;
+}
+
+#menuFooterSecond {
+    display: none;
+}
+
+#containerTextCenterOne {
+    padding-bottom: 50px;
+}
+
+#containerTextCenterOne .row .col .textMain-container{
+    text-align: left;
+    font-size: 3vw;
+}
+
+#containerTextCenterOne .row .col .textMain-containerP {
+    text-align: left;
+    font-size: 2vw;
+    padding-bottom: 30px;
+}
+
+#containerTextCenterOne .row .col .textMain-containerP .saibaMais {
+    margin-top: 20px;
+    color: #fff;
+    background: #36015D;
+    padding: 11px;
+    font-size: 35px;
+    width: 250px;
+    border-radius: 30px;
+    font-family: serif;
+    border: none;
+}
+
+#containerTextCenterOne .row .col .imgZoe {
+    height: 250px;
+}
+
+#containerTextCenterOne .row .col .card {
+    border-radius: 60px;
+    height: 350px;
+}
+
+#containerTextCenterOne .row .col #cardModifyOne,
+#containerTextCenterOne .row .col #cardModifyTwo,
+#containerTextCenterOne .row .col #cardModifyThree {
+    color: #fff;
+    background: #36015D;
+}
+
+#containerTextCenterOne .row .col #cardModifyOne .card-img-top,
+#containerTextCenterOne .row .col #cardModifyTwo .card-img-top,
+#containerTextCenterOne .row .col #cardModifyThree .card-img-top {
+    filter: brightness(0) invert(1);
+    height: 100px;
+}
+
+#containerTextCenterOne .row .col .cardMain .card-title {
+    font-weight: bold;
+    font-size: 28px; 
+}
+
+#containerTextCenterOne .row .col .card .card-text {
+    text-align: justify;
+    font-size: 18px;
+}
+
+section {
+    background: #fff;
+    color: black
+}
+
+section #containerTextCenterSecond {
+    padding-top: 20px;
+}
+
+section #containerTextCenterSecond .row.justify-content-md-center .col.col-lg-2 .col-md-auto h1 {
+    text-align: center;
+}
+
+section #containerTextCenterSecond .row.justify-content-md-center .col.col-lg-2 .col-md-auto h1:hover {
+    font-style: italic;
+    border-bottom: 3px solid black;
+}
+
+/* #loginConta button {
+    border: none;
+    padding: 15px;
+    background: #ff0000;
+    color: #e2e2e2;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+
+#loginConta button:hover {
+    transition: 300ms;
+    background: #a10000;    
+    color: #FFF;
+    box-shadow: 0px 0px 47px 3px #fff;
+} */
+
+section #containerTextCenterSecond .row.justify-content-md-center .col-md-auto .imageLogoPreta {
+    margin: 30px auto;
+    height: 150px;
+    animation: logoAumentaAuto 5s infinite;
+}
+    
+@keyframes logoAumentaAuto {
+    0%, 100% {
+        transform: scale(1.8);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/*
+section:nth-of-type(1) {
+    background-image: url('../IMG/body1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-attachment: fixed;
+    color: black;
+    height: 900px;
+    width: 100%;
+}
+
+section:nth-of-type(2) {
+    background-image: url('../IMG/body2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-attachment: fixed;
+    color: #000;
+    height: 900px;
+    width: 100%;
+}
+*/
+
+#containerTextCenterThree .row .col .imageMulherTexto,
+#containerTextCenterThree .row .col .imagemHomemTexto {
+    height: 400px;
+    position: relative;
+    z-index: 2000;
+}
+
+#containerTextCenterThree .row .col .textoPosImagem {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: justify;
+    z-index: 10000;
+    width: 480px;
+}
+
+#containerTextCenterThree .row #colText1,
+#containerTextCenterThree .row #colText2 {
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+}
+
+#imagemHomemTextoPrime {
+    display: none;
+}
+
+
+
+
+
+
+/*
+.bolMainPeque {
+background: #A060CE;
+height: 100px;
+width: 100px;
+position: relative;
+left: 160%;
+border-radius: 50%;
+}
+*/
+
+
+.quebraEntreBolText {
+    display: none;
+}
+
+.spaceHeaderMain {
+    background: transparent;
+    height: 150px;
+    width: 100%;
+}
+
+.spaceParaRowDoContainer2e3,
+.spaceParaContainer2e3 {
+    background: transparent;
+    height: 10px;
+    width: 100%;
+}
+
+.spaceImgMulherHomem {
+    display: none;
+}
+
+.spaceEntre2Row {
+    background: transparent;
+    height: 70px;
+    width: 100%;
+}
+.spaceSections {
+    height: 80px;
+    background: #fff;
+}
+
+
+
+section .circleMedio1 {
+    background: #A060CE;
+    position: absolute;
+    right: 0;
+    transform: translateY(-30%);
+    width:  120px;
+    height: 220px;
+    border-top-left-radius: 5000px;
+    border-bottom-left-radius: 5000px;
+    z-index: 1000;
+
+    /*USAR SE PRECISO FOR PARA OUTROS ELEMENTOS*/
+    /*transform: rotate(90deg);*/
+    /*transform-origin: bottom left;*/
+}
+
+section .circleMedio2 {
+    background: #A060CE;
+    position: absolute;
+    left: 0;
+    transform: translateY(-10%);
+    width:  120px;
+    height: 220px;
+    border-top-right-radius: 5000px;
+    border-bottom-right-radius: 5000px;
+    z-index: 1000;
+
+    /*USAR SE PRECISO FOR PARA OUTROS ELEMENTOS*/
+    /*transform: rotate(90deg);*/
+    /*transform-origin: bottom left;*/
+}
+
+section .circleMedio3{
+    background: #A060CE;
+    position: absolute;
+    right: 0;
+    transform: translateY(50%);
+    width:  120px;
+    height: 220px;
+    border-top-left-radius: 5000px;
+    border-bottom-left-radius: 5000px;
+    z-index: 1000;
+
+    /*USAR SE PRECISO FOR PARA OUTROS ELEMENTOS*/
+    /*transform: rotate(90deg);*/
+    /*transform-origin: bottom left;*/
+}
+
+section .circleGrande1 {
+    background: #A060CE;
+    position: absolute;
+    left: 0;
+    transform: translateY(-20%);
+    width: 300px;
+    height: 600px;
+    border-top-right-radius: 5000px;
+    border-bottom-right-radius: 5000px;
+    z-index: 1000;
+
+    /*USAR SE PRECISO FOR PARA OUTROS ELEMENTOS*/
+    /*transform: rotate(90deg);*/
+    /*transform-origin: bottom left;*/
+}
+
+section .circleGrande2 {
+    background: #A060CE;
+    position: absolute;
+    right: 0;
+    width:  300px;
+    height: 600px;
+    transform: translateY(-10%);
+    border-top-left-radius: 5000px;
+    border-bottom-left-radius: 5000px;
+
+    /*USAR SE PRECISO FOR PARA OUTROS ELEMENTOS*/
+    /*transform: rotate(90deg);*/
+    /*transform-origin: bottom left;*/
+}
+
+section .circleGrande3 {
+    background: #A060CE;
+    position: absolute;
+    right: 0;
+    width:  300px;
+    height: 600px;
+    transform: translateY(-15%);
+    border-top-left-radius: 5000px;
+    border-bottom-left-radius: 5000px;
+
+    /*USAR SE PRECISO FOR PARA OUTROS ELEMENTOS*/
+    /*transform: rotate(90deg);*/
+    /*transform-origin: bottom left;*/
+}
+
+.spaceParaContainer3e4,
+.spaceParaContainer4e5,
+.spaceParaContainer5e6{
+    height: 100px;
+    background: transparent;
+}
+
+#containerTextCenterFour .row.justify-content-md-center .col-md-auto p {
+    text-align: justify;
+    position: relative;
+    z-index: 1000;
+}
+#containerTextCenterFour .row.justify-content-md-center .col-md-auto ul {
+    list-style-type: none;
+}
+#containerTextCenterFour .row.justify-content-md-center .col-md-auto ul>li{
+    text-align: left;
+}
+#containerTextCenterFour .row.justify-content-md-center .col-md-auto ul li::before {
+    content: "-";
+    margin-right: 5px;
+}
+#containerTextCenterFour .row.justify-content-md-center .col-md-auto {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#sectionSecond {            
+
+}
+
+#sectionSecond .cardInfoSection {
+    background: #DEDCDC;
+    position: relative;
+    z-index: 1000;
+    border-radius: 50px;
+}
+#sectionSecond .cardInfoSection .titleCardInfo {
+    padding-top: 20px;
+}
+#sectionSecond .cardInfoSection .titleCardInfo h2 {
+    font-weight: bold;
+    padding: 20px 0px;
+}
+#sectionSecond .cardInfoSection .bolNumber {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border: 8px solid #A060CE;
+    color: #fff;
+    font-size: 5vw;
+    background: #8346AF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sectionSecond .cardInfoSection #autoFisico,
+#sectionSecond .cardInfoSection #autoEmocio,
+#sectionSecond .cardInfoSection #autoSocial,
+#sectionSecond .cardInfoSection #autoMental,
+#sectionSecond .cardInfoSection #autoEspirit,
+#sectionSecond .cardInfoSection #autoProfiss,
+#sectionSecond .cardInfoSection #autoLudico {
+    width: 50%;
+}
+#sectionSecond .cardInfoSection #autoFisico h3,
+#sectionSecond .cardInfoSection #autoEmocio h3,
+#sectionSecond .cardInfoSection #autoSocial h3,
+#sectionSecond .cardInfoSection #autoMental h3,
+#sectionSecond .cardInfoSection #autoEspirit h3,
+#sectionSecond .cardInfoSection #autoProfiss h3,
+#sectionSecond .cardInfoSection #autoLudico h3 {
+    text-align: left;
+    font-weight: bold;
+}
+#sectionSecond .cardInfoSection #autoFisico ul>li, 
+#sectionSecond .cardInfoSection #autoEmocio ul>li,
+#sectionSecond .cardInfoSection #autoSocial ul>li,
+#sectionSecond .cardInfoSection #autoMental ul>li,
+#sectionSecond .cardInfoSection #autoEspirit ul>li,
+#sectionSecond .cardInfoSection #autoProfiss ul>li,
+#sectionSecond .cardInfoSection #autoLudico ul>li {
+    font-size: 22px;
+    text-align: left;
+    margin: 20px 0;
+} 
+#sectionSecond .cardInfoSection #autoFisico span,
+#sectionSecond .cardInfoSection #autoEmocio span,
+#sectionSecond .cardInfoSection #autoSocial span,
+#sectionSecond .cardInfoSection #autoMental span,
+#sectionSecond .cardInfoSection #autoEspirit span,
+#sectionSecond .cardInfoSection #autoProfiss span,
+#sectionSecond .cardInfoSection #autoLudico span {
+    font-weight: bold;
+}
+
+#rowInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.spacePonti {
+    border-top: 6px dotted #36015D;
+    width: 80%;
+    background: transparent;
+}
+
+.spaceSectionFooter {
+    height: 300px;
+    background: #fff;
+}
+
+footer {
+    background: #561E7F;
+    color: #fff;
+}
+
+#colFooter {
+    margin-top: 20px;
+}
+
+#menuFooter,
+#contatoFooter {
+    padding-top: 70px;
+}
+
+#colFooter img {
+    height: 130px;
+    position: relative;
+    right: 25px;
+    display: flex;
+}
+.footerP {
+    text-align: left;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-family: montserrat;
+}
+
+#menuFooter {
+    text-align: justify;
+    position: relative;
+    left: 10%;
+}
+
+.card-header {
+    margin: 25px 0;
+}
+
+#menuFooter a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.cardResponsiveFooter {
+    display: none;
+}
+
+.spaceAdoFooter {
+    height: 15px;
+    background: transparent;
+}
+#contatoFooter h4 {
+    text-align: center;
+}
+#contatoFooter label,
+#contatoFooter input {
+    height: 50px;            
+}
+#contatoFooter label {
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 80px;
+    background: #36015D;
+}
+#contatoFooter input {
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#contatoFooter label img {
+    height: 50px;
+}
+.enviarMsg {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: left;
+    width: 260px;
+}
+
+.container.text-center #sobreCol1Footer,
+.container.text-center #sobreCol2Footer,
+.container.text-center #sobreCol3Footer,
+.container.text-center #sobreCol4Footer {
+    text-align: left;
+}
+#cardTextPrimaryFooter {
+    background: #561E7F;
+    color: #fff;
+}
+#cardTextSecondFooter {
+    background: #36015D;
+}
+.ahrefIcons {
+    margin-top: 20px;
+    display: inline-flex;
+    grid-gap: 60px;
+}
+
+.ahrefIcons img {
+    height: 30px;
+    transition: 200ms ease-in-out;
+}
+
+.imagemIcon {
+    transition: filter 0.3s ease;
+    cursor: pointer;
+  }
+  
+.ahrefIcons:hover .imagemIcon {
+    filter: blur(5px);
+}
+  
+.ahrefIcons .imagemIcon:hover {
+    filter: none;
+    transform: scale(1.5);
+    transition: 200ms ease-in-out;
+}
+
+#cardTextSecondFooter p {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#rowCardsModify {
+    display: flex;
+}
+
+#rowCardsModify .cardMain {
+    height: 350px;
+    width: 200px;
+    background: rgb(103, 225, 255);
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#rowCardsModify .cardMain:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    background: rgb(103, 151, 255);
+}
+
+#rowCardsModify .cardMain:hover .first-content {
+    height: 0px;
+    opacity: 0;
+}
+
+#rowCardsModify .cardMain:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+}
+
+.first-content {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+}
+
+.second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    transform: scale(1.3);
+    transform: rotate(90deg) scale(-1);
+}
+
+#rowPrimary {
+    display: flex;
+    align-items: center;
+}
+
+#rowPrimary .footerTwoP {
+    display: none;
+}
+
+.col .card {
+    width: 18rem;
+}
+
+.spaceHeaderMain {
+    height: 175px;
+    background: #36015D;
+}
+
+
+
+#main-body #containerTextCenterOne .row .col .quebraLinhaNone {
+    display: block;
+}
+
+#main-body #containerTextCenterOne .row .col #linhaVolta2respon {
+    display: none;
+}
+
+.spaceTextImg {
+    display: none;
+}
+
+.spaceEntreCards {
+    display: none;
+}
+
+#rowCards {
+    display: none;
+}
+
+.spaceMeioCard {
+    height: 100px;
+}
+
+.spaceMainFooter {
+    display: block;
+    height: 200px;
+    background: #fff;
+}
+
+.spaceQuebraFooter {
+    display: none;
+}
+
+/*RESPONSIVIDADE COM 1100PX PARA TABLETS E POSSIVEIS TELAS DE CELULARES*/
+
+@media (max-width:1100px) {
+    #menuFooterSecond {
+        display: none;
+    }
+    #main-header .navbar.navbar.fixed-top .container-fluid .dropdown-item {
+        font-size: 20px;
+        color: black;
+    }
+    #containerTextCenterThree .row .col .imageMulherTexto,
+    #containerTextCenterThree .row .col .imagemHomemTexto {
+        height: 250px;
+        position: relative;
+        z-index: 2000;
+    }
+
+    #rowImgMulherTexto,
+    #rowImgSecondTex {
+        display: flex;
+        align-items: center;
+    }
+
+    #containerTextCenterFour #titleColAutoContFour h1 {
+        margin-left: 10px;
+    }
+
+    section .circleGrande1 {
+        background: #A060CE;
+        position: absolute;
+        left: 0;
+        transform: translateY(-11%);
+        width: 225px;
+        height: 450px;
+        border-top-right-radius: 5000px;
+        border-bottom-right-radius: 5000px;
+        z-index: 1000;
+        /* transform: rotate(90deg); */
+        /* transform-origin: bottom left;*/
+    }
+    section .circleMedio1 {
+        background: #A060CE;
+        position: absolute;
+        right: 0;
+        transform: translateY(-20%);
+        width: 90px;
+        height: 155px;
+        border-top-left-radius: 5000px;
+        border-bottom-left-radius: 5000px;
+        z-index: 1000;
+        /* transform: rotate(90deg); */
+        /* transform-origin: bottom left;*/
+    }
+    section .circleGrande2 {
+        background: #A060CE;
+        position: absolute;
+        right: 0;
+        width: 218px;
+        height: 430px;
+        transform: translateY(5%);
+        border-top-left-radius: 5000px;
+        border-bottom-left-radius: 5000px;
+        /* transform: rotate(90deg); */
+        /* transform-origin: bottom left;*/
+    }
+    section .circleMedio2 {
+        background: #A060CE;
+        position: absolute;
+        left: 0;
+        transform: translateY(-8%);
+        width: 95px;
+        height: 180px;
+        border-top-right-radius: 5000px;
+        border-bottom-right-radius: 5000px;
+        z-index: 1000;
+        /* transform: rotate(90deg); */
+        /* transform-origin: bottom left; */
+    }
+    section .circleMedio3 {
+        background: #A060CE;
+        position: absolute;
+        right: 0;
+        transform: translateY(70%);
+        width: 120px;
+        height: 220px;
+        border-top-left-radius: 5000px;
+        border-bottom-left-radius: 5000px;
+        z-index: 1000;
+        /* transform: rotate(90deg); */
+        /* transform-origin: bottom left; */
+    }
+    section .circleGrande1,
+    section .circleMedio1,
+    section .circleGrande2,
+    section .circleMedio2,
+    section .circleMedio3 {
+        opacity: 0.8;
+    }
+
+
+    /*RESPONSIVIDADE COM 700PX PARA TABLETS E POSSIVEIS TELAS DE CELULARES*/
+    @media (max-width: 700px) {
+        #menuFooterSecond {
+            display: none;
+        }
+        .spaceHeaderMain {
+            height: 175px;
+            background: #36015D;
+        }
+    
+        #main-header .navbar.navbar.fixed-top {
+            background: #36015D;
+        }
+        #main-header .navbar.navbar.fixed-top .container-fluid .navbar-brand img {
+            height: 140px;
+            position: relative;
+            left: 25px;
+        }
+        #main-header .navbar.navbar.fixed-top .container-fluid .dropdown-item {
+            font-size: 20px;
+            color: black;
+        }
+        #main-header .navbar.navbar.fixed-top .container-fluid .navbar-toggler {
+            background: #fff;
+        }
+        .offcanvas.offcanvas-end.text {
+            background: #36015D;       /*COR DE ANTES #050A30*/
+        }
+        .dropdown-menu.dropdown-menu {
+            background: #fff;
+        }
+        #main-header .navbar.navbar.fixed-top .container-fluid #offcanvasDarkNavbarLabel img {
+            height: 140px;
+        }
+        #main-header .navbar.navbar.fixed-top .container-fluid .offcanvas-header .btn-close {
+            font-size: 30px;
+        }
+        #main-header .navbar.navbar.fixed-top .container-fluid .offcanvas-body .nav-link,
+        #main-header .navbar.navbar.fixed-top .container-fluid .offcanvas-body .nav-link.dropdown-toggle {
+            font-size: 25px;
+            color: #fff;
+        }
+        #main-header .navbar.navbar.fixed-top .container-fluid .d-flex.mt-3 .btn.btn-success {
+            padding: 15px;
+            font-size: 18px;
+        }
+    
+        /***MAIN***/
+        #main-body #containerTextCenterOne {
+            background: linear-gradient(to bottom, #36015D 5%, #561E7F 60%, #8346AF 85%, #A060CE 100%);
+        }
+        #main-body #containerTextCenterOne .row .col {
+            color: #fff;
+        }
+        #main-body #containerTextCenterOne .row .col .quebraLinha {
+            
+        }
+        #main-body #containerTextCenterOne .row .col #linhaVolta2respon {
+            display: block;
+        }
+        #main-body #containerTextCenterOne .row .col .quebraLinhaNone {
+            display: none;
+        }
+        #main-body #containerTextCenterOne .row #divImgZoetwo img {
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        #main-body #containerTextCenterOne .row .col .textMain-container {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            margin-left: 20px;
+            font-family: Montserrat;
+            text-align: left;
+            font-weight: bolder;
+        }
+        #main-body #containerTextCenterOne .row .col .textMain-containerP{
+            text-align: left;
+            margin-left: 20px;
+            margin-top: 25px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-family: Montserrat;
+        }
+    
+        #main-body #containerTextCenterOne .row .col .textMain-containerP .saibaMais {
+            margin: 25px 0;
+            border: none;
+            color: #fff;
+            font-size: 35px;
+            background: #561E7F;
+            padding: 5px;
+            width: 210px;
+            border-radius: 30px;
+            font-family: Montserrat;
+        }
+    
+        #main-body #containerTextCenterOne #rowCardsModify {
+            display: none;
+        }
+
+        #rowCards {
+            display: block;
+        }
+        #containerTextCenterOne .row .col .card {
+            border-radius: 25px;
+            height: 400px;
+        }
+        #containerTextCenterOne #rowCards #cardInformationOne img,
+        #containerTextCenterOne #rowCards #cardInformationSecond img {
+            height: 90px;
+        }
+    
+        #containerTextCenterSecond #titleInfoMain h1 {
+            margin-top: 30px;
+            font-size: 2.3rem;
+        }
+
+        section #containerTextCenterSecond #imgLogoSerenusColTwo img {
+            height: 150px;
+            margin: 35px 0;
+            animation: animaImgLogoTwo 5.5s ease infinite;
+        }
+    
+        @keyframes animaImgLogoTwo {
+            0%, 100% {
+            transform: scale(1);
+            }
+            50% {
+            transform: scale(1.4);
+            }
+        }
+    
+        #containerTextCenterOne #rowCards .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    
+        #containerTextCenterOne #rowCards .card-text {
+            font-size: 18px;
+        }
+    
+        #containerTextCenterSecond #titleInfoMain h1 {
+            margin-top: 30px;
+        }
+    
+        #containerTextCenterThree #imgMulherContThree img {
+            height: 150px;
+        }
+    
+        #containerTextCenterThree #rowImgMulherTexto {
+            display: flex;
+            align-items: center;
+        }
+    
+        #containerTextCenterThree #colText1 .textoPosImagem {
+            text-align: justify;
+            width: 235px;
+        }
+    
+        #containerTextCenterThree #imagemHomemTextoPrime {
+            display: none;
+        }
+    
+        #containerTextCenterThree #imgHomemContThree img {
+            height: 150px;
+            position: relative;
+            left: 10px;
+            bottom: 40px;
+        }
+    
+        #containerTextCenterThree #rowImgSecondTex {
+            display: flex;
+            align-items: center;
+
+        }
+    
+        #rowImgSecondTex #colText2 .textoPosImagem {
+            text-align: justify;
+            width: 250px;
+        }
+    
+        #containerTextCenterFour #titleColAutoContFour h1 {
+            margin: 40px 0;
+        }
+    
+        #containerTextCenterFour #paragrafContFour p {
+            text-align: justify;
+            width: 93%;
+            font-size: 20px;
+            margin: 0 auto;
+        }
+    
+        #containerTextCenterFour .row.justify-content-md-center #paragrafContFour ul {
+            list-style-type: none;
+        }
+    
+        #containerTextCenterFour .row.justify-content-md-center #paragrafContFour ul li {
+            position: relative;
+            text-align: left;
+            font-size: 17px;
+            font-weight: 500;
+        }
+    
+        #containerTextCenterFour .row.justify-content-md-center #paragrafContFour ul li::before {
+            content: "-";
+            position: absolute;
+            left: -20px;
+            bottom: -1px;
+            width: 20px;
+            text-align: right;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    
+        #cardSectionSecond #colCardInfoSection .titleCardInfo h2 {
+            margin: 25px 0;
+        }
+    
+        #sectionSecond #cardSectionSecond {
+            background: #c9c9c9ea;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+    
+        #rowInfo {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .bolNumber {
+            height: 110px;
+            width: 110px;
+            background: #8346AF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 10px solid #A060CE;
+            border-radius: 1000px;
+            font-size: 45px;
+            font-family: lora;
+            font-weight: bold;
+            color: #fff;
+            margin: 0 auto;
+        }
+    
+        #autoFisico,
+        #autoEmocio,
+        #autoSocial,
+        #autoMental,
+        #autoEspirit,
+        #autoProfiss,
+        #autoLudico {
+            width: 350px;
+        }
+    
+        #autoFisico h3,
+        #autoEmocio h3,
+        #autoSocial h3,
+        #autoMental h3,
+        #autoEspirit h3,
+        #autoProfiss h3,
+        #autoLudico h3 {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    
+        #autoFisico ul>li,
+        #autoEmocio ul>li,
+        #autoSocial ul>li,
+        #autoMental ul>li,
+        #autoEspirit ul>li,
+        #autoProfiss ul>li,
+        #autoLudico ul>li {
+            font-size: 18px;
+            text-align: left;
+        }
+    
+        #autoFisico ul>li span,
+        #autoEmocio ul>li span,
+        #autoSocial ul>li span,
+        #autoMental ul>li span,
+        #autoEspirit ul>li span,
+        #autoProfiss ul>li span,
+        #autoLudico ul>li span {
+            font-weight: bold;
+        }
+    
+        footer {
+            background: #561E7F;
+            color: #fff;
+        }
+    
+        footer .container.text-center #rowPrimary #colFooter img {
+            height: 100px;
+            margin: 25px auto;
+            width: 150px;
+        }
+    
+        footer .container.text-center #rowPrimary #colFooter .footerP {
+            display: none;
+        }
+    
+        .footerTwoP span {
+            font-weight: bold;
+        }
+    
+        #menuFooter {
+            position: relative;
+            text-align: left;
+            margin: 20px 0;
+            width: 42px;
+            left: auto;
+        }
+        #cardTextPrimaryFooter {
+            display: block;
+        }
+        #menuFooter a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #infoMenuFooter {
+            width: 100px;
+            margin: 0 auto;
+        }
+    
+        #contatoFooter {
+            padding-left: 20%;
+        }
+    
+        #contatoFooter h4 {
+            position: relative;
+            left: 0;
+            width: 200px;
+            margin: 0 auto;
+        }
+    
+        #contatoFooter label,
+        #contatoFooter input {
+            height: 50px;            
+            margin-bottom: 30px;
+        }
+    
+        #contatoFooter label {
+            border: none;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            width: 80px;
+            background: #36015D;
+        }
+    
+        #contatoFooter input {
+            border: none;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+    
+        #contatoFooter label img {
+            height: 50px;
+        }
+    
+        .enviarMsg {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+    
+        .spaceConttFooter {
+            height: 80px;
+            background: transparent;
+        }
+    
+        .contatoFooterEmergency {
+            text-align: left;
+            margin-left: 10%;
+        }
+    
+        .contatoFooterEmergency p span {
+            font-weight: bold;
+        }
+    
+        #cardTextSecondFooter {
+            background: #36015D;
+        }
+    
+        #cardTextSecondFooter a {
+            letter-spacing: 45px;
+            text-decoration: none;
+        }
+    
+        #cardTextSecondFooter p {
+            color: #fff;
+            margin: 65px 0;
+            font-size: 20px;
+        }
+    
+    
+    
+    
+    
+    
+        section .circleGrande1,
+        section .circleMedio1,
+        section .circleGrande2,
+        section .circleMedio2,
+        section .circleMedio3,
+        section .circleGrande3 {
+            display: none;
+        }
+    
+        .spaceQuebraFooter {
+            display: block;
+        }
+
+        .spacePonti {
+            border-top: 8px dotted #36015D;
+            width: 80%;
+            background: transparent;
+            margin: 45px 0;
+        }
+    
+        .quebraEntreBolText {
+            height: 30px;
+            background: transparent;
+        }
+    
+        .spaceParaContainer5e6 {
+            height: 25px;
+        }
+    
+        .spaceEntre2Row{
+            height: 60px;
+        } 
+        .spaceImgMulherHomem {
+            display: none;
+        }
+        .spaceParaRowDoContainer2e3 {
+            display: none;
+        }
+    
+        .spaceTextImg {
+            display: none;
+        }
+    
+        .spaceParaContainer2e3 {
+            display: none;
+        }
+    
+        .col .card{
+            width: 220px;
+            margin: 0 auto;
+            height: 360px;
+        }
+    
+        .spaceEntreCards {
+            height: 50px;
+            display: block;
+        }        
+    
+        .spaceMeioCard {
+            display: none;
+        }
+    
+        .spaceMainFooter {
+            display: none;
+        }        
+
+        #containerTextCenterThree .row .col .imageMulherTexto,
+        #containerTextCenterThree .row .col .imagemHomemTexto,
+        #sectionSecond .cardInfoSection,
+        #containerTextCenterFour .row.justify-content-md-center .col-md-auto p,
+        #containerTextCenterThree .row .col .textoPosImagem {
+            z-index: 0;
+        }    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        /*RESPONSIVIDADE DE ATÉ 500PX*/
+        @media (max-width:500px) {
+            #main-header .navbar.navbar.fixed-top .container-fluid .navbar-brand img {
+                height: 140px;
+                position: relative;
+                left: 25px;
+                width: 190px;
+            }
+            #main-header .navbar.navbar.fixed-top .container-fluid .navbar-toggler {
+                background: #fff;
+                position: relative;
+                left: 55px;
+            }
+            #main-header .navbar.navbar.fixed-top .container-fluid .dropdown-item {
+                font-size: 20px;
+                color: black;
+            }
+            #containerTextCenterOne #rowCards .spaceEntreCards {
+              display: block;
+              height: 100px;
+              background: transparent;
+            }
+            #containerTextCenterOne #rowCards .col #cardInformationOne,
+            #containerTextCenterOne #rowCards .col #cardInformationSecond {
+                margin: 0 auto;
+                width: 80%;
+                border-radius: 35px;
+                height: 420px;
+            }
+            #containerTextCenterOne .row .col .textMain-containerP .saibaMais {
+                margin: 25px 0;
+                border: none;
+                font-size: 28px;
+                font-weight: bolder;
+                color: #fff;
+                background: #561E7F;
+                padding: 15px;
+                width: 161px;
+                border-radius: 30px;
+                font-family: Montserrat;
+            }
+            #containerTextCenterOne #rowCards .col #cardInformationOne h5,
+            #containerTextCenterOne #rowCards .col #cardInformationSecond h5 {
+              font-weight: bolder;
+              font-size: 35px;
+            }
+            #containerTextCenterOne #rowCards .col #cardInformationOne p,
+            #containerTextCenterOne #rowCards .col #cardInformationSecond p {
+              font-size: 25px;
+            }
+            #containerTextCenterOne #rowCards .col #cardInformationOne img,
+            #containerTextCenterOne #rowCards .col #cardInformationSecond img {
+              margin-top: 15px;
+              height: 100px;
+              animation: animaImg 4s ease infinite;
+            }
+            @keyframes animaImg {
+              0%, 100% {
+                transform: scale(1);
+              }
+              50%{
+                transform: scale(1.3);
+              }
+            }
+            #containerTextCenterOne #rowCards .col #cardInformationOne, #containerTextCenterOne #rowCards .col #cardInformationSecond {
+                margin: 0 auto;
+                width: 80%;
+                border-radius: 35px;
+                height: 520px;
+            }
+            #rowCards {
+                display: flex;
+            }
+            #containerTextCenterOne #rowCardsModify {
+              display: none;
+            }
+            #containerTextCenterOne .spaceMeioCard {
+              height: 80px;
+              background: transparent;
+            }
+            section #containerTextCenterSecond #titleInfoMain h1 {
+                margin-top: 30px;
+                font-size: 38px;
+                font-weight: bolder;
+            }
+            section #containerTextCenterSecond #titleInfoMain {
+              font-family: Montserrat;
+              margin-top: 50px;
+            }
+            section #containerTextCenterSecond  #imgLogoSerenusColTwo img {
+              height: 150px;
+              margin: 35px auto;
+              animation: animaImgLogoTwo 5.5s ease infinite;
+            }
+            
+            @keyframes animaImgLogoTwo {
+              0%, 100% {
+                transform: scale(1);
+              }
+              50% {
+                transform: scale(1.6);
+              }
+            }
+
+            #containerTextCenterThree #rowImgSecondTex {
+                display: flex;
+                align-items: center;
+                margin: 0 15px;
+            }
+
+            #containerTextCenterThree .row #imgMulherContThree img {
+                height: 210px;
+                width: 350px;
+            }
+        
+            #containerTextCenterThree #colText1 p {
+                font-size: 20px;
+                width: 400px;
+                margin: 0 auto;
+            }
+
+            #containerTextCenterThree #colText1 .textoPosImagem {
+                text-align: justify;
+                width: 395px;
+                margin: 65px auto;
+            }
+        
+            #containerTextCenterThree .imagemHomemTexto {
+              height: 210px;
+              width: 350px;
+              margin: 60px 0;
+            }
+        
+            #containerTextCenterThree .row #imgHomemContThree img {
+              display: none;
+            }
+        
+            #containerTextCenterThree .row #colText2 p {
+              font-size: 20px;
+              width: 400px;
+              margin: 0 auto;
+            }
+        
+            #containerTextCenterFour #titleColAutoContFour h1 {
+              font-family: Montserrat;
+              font-size: 38px;
+              font-weight: bolder;
+            }
+        
+            #containerTextCenterFour .row.justify-content-md-center #paragrafContFour p {
+                font-size: 20px;
+                margin: 0 auto;
+                border-radius: 25px;
+                text-align: justify;
+                width: 350px;
+                margin: 65px auto;
+            }
+          
+            #containerTextCenterFour .row.justify-content-md-center #paragrafContFour ul {
+              list-style-type: none;
+              padding-left: 20px;
+            }
+        
+            #containerTextCenterFour .row.justify-content-md-center #paragrafContFour ul li {
+              position: relative;
+              font-size: 18px;
+              margin: 10px 0;
+            }
+        
+            #containerTextCenterFour .row.justify-content-md-center #paragrafContFour ul li::before {
+              content: "-";
+              position: absolute;
+              left: -20px;
+              bottom: -1px;
+              width: 20px;
+              text-align: right;
+              font-size: 20px;
+              font-weight: bold;
+            }
+        
+            #pAtentarAlert {
+                font-size: 20px;
+                width: 400px;
+                margin: 0 auto;
+                border-radius: 25px;
+                text-align: center;
+                animation: alertarUsuario 4s infinite;
+                background: #30074e;
+                padding: 20px;
+            }
+            @keyframes alertarUsuario {                
+                0%, 100% {
+                    transform: scale(.9);
+                    color: red;
+                }
+                25% {
+                    color: yellow;
+                }
+                50% {
+                    color: green;
+                    transform: scale(1.1);
+                }
+                75% {
+                    color: orange;
+                }
+            }
+            #sectionSecond #cardSectionSecond {
+              background: #c9c9c9ea;
+              border-top-left-radius: 50px;
+              border-top-right-radius: 50px;
+            }
+        
+            #sectionSecond #cardSectionSecond .col-md-auto .cardInfoSection .titleCardInfo h2 {
+              margin-top: 50px;
+            }
+        
+            #rowInfo {
+              display: flex;
+              justify-content: center;
+            }
+        
+            #sectionSecond .cardInfoSection .bolNumber {
+                height: 150px;
+                width: 150px;
+                border-radius: 100%;
+                border: 8px solid #A060CE;
+                color: #fff;
+                font-size: 12vh;
+                background: #8346AF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #cardSectionSecond #rowInfo ul {
+                width: 350px;
+                position: relative;
+                right: 100px;
+            }
+
+            #sectionSecond .cardInfoSection #autoFisico h3, 
+            #sectionSecond .cardInfoSection #autoEmocio h3, 
+            #sectionSecond .cardInfoSection #autoSocial h3, 
+            #sectionSecond .cardInfoSection #autoMental h3, 
+            #sectionSecond .cardInfoSection #autoEspirit h3, 
+            #sectionSecond .cardInfoSection #autoProfiss h3, 
+            #sectionSecond .cardInfoSection #autoLudico h3 {
+                text-align: center;
+                font-weight: bold;
+            }
+        
+            #autoFisico,
+            #autoEmocio,
+            #autoSocial,
+            #autoMental,
+            #autoEspirit,
+            #autoProfiss,
+            #autoLudico {
+              width: 350px;
+            }
+        
+            #autoFisico h3,
+            #autoEmocio h3,
+            #autoSocial h3,
+            #autoMental h3,
+            #autoEspirit h3,
+            #autoProfiss h3,
+            #autoLudico h3 {
+              font-weight: bold;
+              margin-bottom: 20px;
+            }
+        
+            #autoFisico ul>li,
+            #autoEmocio ul>li,
+            #autoSocial ul>li,
+            #autoMental ul>li,
+            #autoEspirit ul>li,
+            #autoProfiss ul>li,
+            #autoLudico ul>li {
+              font-size: 18px;
+              text-align: left;
+            }
+        
+            #autoFisico ul>li span,
+            #autoEmocio ul>li span,
+            #autoSocial ul>li span,
+            #autoMental ul>li span,
+            #autoEspirit ul>li span,
+            #autoProfiss ul>li span,
+            #autoLudico ul>li span {
+              font-weight: bold;
+            }
+        
+            footer {
+              background: #561E7F;
+              color: #fff;
+            }
+        
+            footer .container.text-center #rowPrimary #colFooter img {
+                height: 160px;
+                margin: 0 auto;
+                position: relative;
+                left: 0px;
+            }
+        
+            footer .container.text-center #rowPrimary #colFooter .footerP {
+              display: none;
+            }
+        
+            .footerTwoP span {
+              font-weight: bold;
+            }
+        
+            #menuFooter {
+              display: none;
+            }
+
+            #menuFooterSecond {
+                display: block;
+            }
+
+            #cardTextPrimaryFooter {
+                display: block;
+            }
+        
+            #menuFooter a {
+              text-decoration: none;
+              color: #fff;
+            }
+
+            #menuFooterSecond {
+                display: block;
+                text-align: left;
+                width: 180px;
+                margin: 0 auto;
+            }
+
+            #menuFooterSecond h4 {
+                font-size: 6vh;
+                font-weight: bold;
+            }
+
+            #menuFooterSecond a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 22px;
+            }
+        
+            #contatoFooter {
+              padding-left: 20%;
+            }
+        
+            #contatoFooter h4 {
+              position: relative;
+              margin-bottom: 30px;
+              width: 170px;
+              font-size: 6vh;
+              margin: 0 auto;
+              font-weight: bold;
+            }
+        
+            #contatoFooter label,
+            #contatoFooter input {
+              height: 50px;            
+              margin-bottom: 30px;
+            }
+        
+            #contatoFooter label {
+                border: none;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                width: 80px;
+                background: #36015D;
+            }
+        
+            #contatoFooter input {
+                border: none;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+            }
+            
+            #contatoFooter label img {
+                height: 50px;
+            }
+        
+            .enviarMsg {
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                width: 300px;
+                justify-content: left;
+            }
+        
+            .contatoFooterEmergency {
+              text-align: left;
+              margin-left: 10%;
+            }
+        
+            .contatoFooterEmergency p span {
+              font-weight: bold;
+            }
+        
+            #cardTextSecondFooter {
+              background: #36015D;
+            }
+        
+            #cardTextSecondFooter a {
+              letter-spacing: 45px;
+              text-decoration: none;
+            }
+        
+            #cardTextSecondFooter p {
+              color: #fff;
+              margin: 65px 0;
+              font-size: 20px;
+            }
+        
+        
+        
+
+        
+        
+            .quebraMainFooters {
+                background: #fff;
+                height: 115px;
+            }
+            .spaceParaContainer4e5 {
+                height: 55px;
+            }
+
+            .spaceMeioCard {
+                display: none;
+            }
+
+            .spaceConttFooter {
+                height: 80px;
+                background: transparent;
+            }
+            .spaceEntre2Row {
+                height: 25px;
+            }
+            .spaceParaRowDoContainer2e3 {
+              height: 30px;
+              background: transparent;
+            }
+            
+            .spaceParaContainer2e3 {
+              height: 60px;
+              background: transparent;
+            }
+        
+            .spaceImgMulherHomem {
+              display: none;
+            }
+        
+            .spaceParaContainer5e6 {
+              height: 150px;
+              background: #fff;
+            }
+        
+            .quebraEntreBolText {
+              height: 40px;
+              display: block;
+              background: transparent;
+            }
+            
+            .spacePonti {
+              border-top: 3px dotted #36015D;
+              width: 80%;
+              background: transparent;
+            }
+        
+            .spaceQuebraFooter {
+              display: block;
+              opacity: 0;
+            }
+        
+            .spaceMainFooter {
+              display: none;
+            }
+        
+            .circleMedio1 {
+              /*
+              height: 150px;
+              width: 80px;
+              position: absolute;
+              right: 0px;
+              background: #A060CE;
+              transform: translateY(-5%);
+              border-top-left-radius: 1000px;
+              border-bottom-left-radius: 1000px;
+              z-index: -1000;
+              */
+              display: none;
+            }
+        
+            .circleGrande1 {
+              display: none;
+            }
+
+            #containerTextCenterThree .row .col .imageMulherTexto,
+            #containerTextCenterThree .row .col .imagemHomemTexto,
+            #sectionSecond .cardInfoSection,
+            #containerTextCenterFour .row.justify-content-md-center .col-md-auto p,
+            #containerTextCenterThree .row .col .textoPosImagem {
+                z-index: 0;
+            }
+
+
+            
+            @media (max-width:380px) {
+                #main-header .navbar.navbar.fixed-top .container-fluid .navbar-brand img {
+                    height: 110px;
+                    width: 140px;
+                }
+
+                #main-header .navbar.navbar.fixed-top .container-fluid .navbar-toggler {
+                    background: #fff;
+                    position: relative;
+                    left: 50px;
+                }
+
+                #containerTextCenterOne #rowCards .col #cardInformationOne, #containerTextCenterOne #rowCards .col #cardInformationSecond {
+                    margin: 30px auto;
+                    width: 80%;
+                    border-radius: 35px;
+                    height: 420px;
+                }
+
+                #main-header .navbar.navbar.fixed-top .container-fluid .dropdown-item {
+                    font-size: 20px;
+                    color: black;
+                }
+
+                #containerTextCenterOne #rowCards .col #cardInformationOne img, #containerTextCenterOne #rowCards .col #cardInformationSecond img {
+                    margin-top: 15px;
+                    height: 80px;
+                    animation: animaImg 4s ease infinite;
+                }
+                @keyframes animaImg {
+                    0%, 100% {
+                      transform: scale(.9);
+                    }
+                    50%{
+                      transform: scale(1.1);
+                    }
+                }
+
+                #containerTextCenterOne #rowCards .col #cardInformationOne h5, #containerTextCenterOne #rowCards .col #cardInformationSecond h5 {
+                    font-weight: bolder;
+                    font-size: 30px;
+                }
+
+                #containerTextCenterOne #rowCards .col #cardInformationOne p, #containerTextCenterOne #rowCards .col #cardInformationSecond p {
+                    font-size: 20px;
+                }
+
+                #containerTextCenterOne #rowCards .spaceEntreCards {
+                    display: block;
+                    height: 25px;
+                    background: transparent;
+                }
+
+                #containerTextCenterThree .row #imgMulherContThree img {
+                    height: 195px;
+                    width: 100%;
+                }
+
+                #containerTextCenterThree #colText1 .textoPosImagem {
+                    text-align: justify;
+                    margin: 65px auto;
+                }
+
+                #containerTextCenterThree .row #colText2 p {
+                    font-size: 20px;
+                    margin: 0 auto;
+                }
+
+                #containerTextCenterFour .row.justify-content-md-center #paragrafContFour p {
+                    font-size: 20px;
+                    margin: 0 auto;
+                    border-radius: 25px;
+                    text-align: justify;
+                }
+
+                #containerTextCenterThree #colText1 .textoPosImagem,
+                #containerTextCenterThree .row #colText2 p,
+                #containerTextCenterFour .row.justify-content-md-center #paragrafContFour p {
+                    width: 280px;
+                }
+
+                #cardSectionSecond #rowInfo ul {
+                    width: 280px;
+                    position: relative;
+                    right: 80px;
+                }
+
+                #containerTextCenterThree #imagemHomemTextoPrime {
+                    display: block;
+                    width: 295px;
+    
+                }
+
+                #containerTextCenterThree #imagemHomemTextoPrime img{
+                    height: 195px;
+                    width: 100%;
+                }
+
+                #containerTextCenterThree .row .col .imageMulherTexto,
+                #containerTextCenterThree .row .col .imagemHomemTexto,
+                #sectionSecond .cardInfoSection,
+                #containerTextCenterFour .row.justify-content-md-center .col-md-auto p,
+                #containerTextCenterThree .row .col .textoPosImagem {
+                    z-index: 0;
+                }
+
+                footer {
+                    display: block;
+                }
+
+                footer .container.text-center #rowPrimary #colFooter img {
+                    height: 130px;
+                    margin: 0 auto;
+                    position: relative;
+                    left: 0px;
+                }
+
+                #contatoFooter {
+                    padding-left: 10%;
+                }
+
+                #menuFooterSecond {
+                    display: block;
+                }
+
+                #cardTextPrimaryFooter {
+                    display: block;
+                }
+
+                .enviarMsg {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 auto;
+                    width: 250px;
+                    justify-content: left;
+                }
+
+                .spaceImgMulherHomem {
+                    display: block;
+                }
+            }
+        }
+    }
+}

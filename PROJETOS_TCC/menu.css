@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*CORPO DA PAGINA PARA DESKTOP*/
+
+.hide-on-scroll {
+    transform: translateX(-150%);
+}
+
+.navbar.navbar.fixed-top,
+.offcanvas.offcanvas-end.text {
+    background: #36015D; /*COR DE ANTES #050A30*/
+}
+
+.dropdown-menu.dropdown-menu {
+    background: #5b6294;
+}
+
+.navbar-toggler{
+    margin-right: 70px;
+    border-radius: 10px;
+    height: 60px;
+    width: 70px;
+    background: #fff;
+    font-size: 1.7rem;
+}
+
+.navbar.navbar.fixed-top,
+.offcanvas.offcanvas-end.text,
+.navbar.navbar.fixed-top a {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.offcanvas-header .btn-close {
+    font-size: 40px;
+}
+
+.offcanvas-title {
+    width: 220px;
+    height: 120px;
+}
+
+.navbar.navbar.fixed-top a img {
+    height: 150px;
+    width: 220px;
+    position: relative;
+    left: 40%;
+}
+
+.navbar.navbar.fixed-top .offcanvas-header h5 img {
+    height: 100%;
+    width: 100%;
+}
+
+.form-control.me-2 {
+    font-size: 1.4rem; 
+}
+.d-flex.mt-3 button {
+    font-size: 1.4rem; 
+}
+
+.dropdown-item:hover{
+    background: #003a92;
+}

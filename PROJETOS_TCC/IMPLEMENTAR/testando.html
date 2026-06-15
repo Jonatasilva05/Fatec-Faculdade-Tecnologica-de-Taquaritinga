@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="anim">animal</button>
+    <button id="test">tes</button>
+
+    <div id="resut"></div>
+
+    <script>
+        async function carregda() {
+            const resp = await fetch('dados.json');
+            const dados = await resp.json();
+            return dados.categorias;
+        }
+
+        function exibcat(categorias, dados){
+            const list = dados[categorias];
+            document.querySelector('#resut').innerHTML = `<h2>${categorias.charAt(0).toUpperCase() + categorias.slice(1)}:</h2><p>${list.join(', ')}</p>`;
+        }
+
+        document.querySelector('#anim').addEventListener('click', async function(){
+            const dados = await carregda();
+            exibcat('animal', dados);
+        })
+
+        document.querySelector('#test').addEventListener('click', async function(){
+            const dados = await carregda();
+            exibcat('test', dados);
+        })
+
+    </script>
+
+</body>
+</html>

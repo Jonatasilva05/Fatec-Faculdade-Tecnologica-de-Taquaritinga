@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!--CSS BOODSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!--IMAGEM NA ABA DO NAVEGADOR-->
+    <link rel="icon" href="./IMG/SerenusLetra.ico" type="image/x-icon">
+
+    <!--TITULO-->
+    <title>Serenus Group</title>
+</head>
+<body>
+
+<header id="main-header"> 
+    <nav class="navbar navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <img src="./IMG/serenus.png" alt="Logo do Serenus">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                <img src="./IMG/serenus.png" alt="Logo da Serenus">
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Exercicios</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Mais Opções
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Sobre o Serenus</a></li>
+                    <li><a class="dropdown-item" href="#">Profissionais</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Avaliações e Ajudas</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Tela-login/index.html" id="loginConta" class="contatest"><button style="border: none; padding: 15px; background: #ff0000; color: #e2e2e2; font-size: 20px; font-weight: bolder; border-radius: 20px;">Acessar Minha Conta</button></a>
+                </li>
+                </ul>
+                <form class="d-flex mt-3" role="search"> 
+                    <input class="form-control me-2" type="search" placeholder="Psicologo..." aria-label="Search">
+                    <button class="btn btn-success" type="submit">Buscar</button>     
+                </form>
+            </div>
+            </div>
+        </div>
+    </nav>
+</header>   
+    
+    <div class="spaceHeaderMain"></div>
+    
+<main id="main-body">
+    <div class="container text-center" id="containerTextCenterOne">
+        <div class="row">
+            <div class="col">
+            <h3 class="textMain-container">Serenus</h3>
+                <p class="textMain-containerP">Sua Paz, Nossa Missão, <br class="quebraLinha"> Cuidando da sua <br class="quebraLinhaNone"> Mente, <br class="quebraLinhaNone" id="linhaVolta2respon"> Transformando <br class="quebraLinhaNone"> Vidas.
+                <br>
+                <button class="saibaMais">Saiba mais</button>
+                </p>
+            </div>
+
+            <div class="spaceTextImg"></div>
+            
+            <div class="col" id="divImgZoetwo">
+            <img class="imgZoe" src="./IMG/zoe.png" alt="imagem da Zoe, a mascote do Serenus">
+            </div>
+        </div>
+
+        <!--ORIGINAL--> 
+        <div class="row" id="rowCards">
+            <div class="col">
+                <div class="card" id="cardInformationOne">
+                    <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+                    <div class="card-body">
+                    <h5 class="card-title">Se Ajudar</h5>
+                    <p class="card-text">Colaboração consigo mesmo é muito importante para ter uma saúde boa e melhorar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spaceEntreCards"></div>
+
+            <div class="col">
+                <div class="card" id="cardInformationSecond">
+                    <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+                    <div class="card-body">
+                        <h5 class="card-title">Informações e Artigos Educativos</h5>
+                        <p class="card-text">Artigos e informações para vários transtornos mentais como Depressão, Ansiedade, Burnout e entre outros</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--MODIFICADO-->
+        <div class="row" id="rowCardsModify">
+            <div class="col">
+                <div class="cardMain" id="cardModifyOne" style="width: 18rem; margin: 50px auto;">
+                    <div class="first-content">
+                        <span>
+                            <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+                            <h5 class="card-title">Se Ajudar</h5>
+                        </span>
+                    </div>
+                    <div class="second-content">
+                        <span>
+                            <div class="card-body">
+                                <p class="card-text">Colaboração consigo mesmo é muito importante para ter uma saúde boa e melhorar.</p>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="cardMain" id="cardModifyTwo" style="width: 18rem; margin: 50px auto;">
+                    <div class="first-content">
+                        <span>
+                            <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+                            <h5 class="card-title">Informações e Artigos Educativos</h5>
+                        </span>
+                    </div>
+                    <div class="second-content">
+                        <span>
+                            <div class="card-body">
+                                <p class="card-text">Artigos e informações para vários transtornos mentais como Depressão, Ansiedade, Burnout e entre outros</p>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="cardMain" id="cardModifyThree" style="width: 18rem; margin: 50px auto;">
+                    <div class="first-content">
+                    <span>
+                        <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+                        <h5 class="card-title">Recursos de auto ajuda</h5>
+                    </span>
+                    </div>
+                    <div class="second-content">
+                    <span>
+                        <div class="card-body">
+                        <p class="card-text">Aqui iremos oferecer técnicas de auto ajuda como gerenciar seu estresse, guias de meditação e como melhorar o seu bem-estar.</p>
+                        </div>
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="spaceMeioCard"></div>
+
+</main>
+
+<section>
+    <div class="container text-center" id="containerTextCenterSecond">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2"></div>
+            <div class="col-md-auto" id="titleInfoMain">
+                <h1>Informações Sobre a Saúde Mental</h1> 
+            </div>
+            <div class="col col-lg-2"></div>
+        </div>
+        
+        <div class="circleMedio1"></div>
+    
+        <div class="spaceParaRowDoContainer2e3"></div>
+    
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2"></div>
+            <div class="col-md-auto" id="imgLogoSerenusColTwo">
+                <img class="imageLogoPreta" src="./IMG/Logopreta.png" alt="LOGO DO SITE SERENUS DE COR PRETA"> 
+            </div>
+            <div class="col col-lg-2"></div>
+        </div>
+    </div>
+    
+    <div class="circleGrande1"></div>
+
+    <div class="spaceParaContainer2e3"></div>
+    
+    <div class="container text-center" id="containerTextCenterThree">
+        <div class="row" id="rowImgMulherTexto"> 
+            <div class="col" id="imgMulherContThree">
+                <img class="imageMulherTexto" src="./IMG/mulher1.png" alt="imagem de uma mulher sorrindo">
+            </div>
+            
+            <div class="spaceImgMulherHomem"></div>
+        
+            <div class="col" id="colText1"> 
+                <p class="textoPosImagem">A saúde mental é crucial para o bem-estar geral, influenciando pensamentos, sentimentos e ações. Afeta como lidamos com o estresse, nos relacionamos e tomamos decisões. Para uma vida equilibrada, é importante dormir bem, alimentar-se adequadamente, exercitar-se e manter bons relacionamentos. Buscar apoio profissional é essencial para tratar transtornos mentais e melhorar a qualidade de vida.</p>
+            </div>
+        </div>
+        
+        <div class="circleGrande2"></div>
+        
+        <img class="imagemHomemTexto" id="imagemHomemTextoPrime" src="./IMG/homem.png" alt="imagem de um homem sorrindo">  
+    
+        <div class="spaceEntre2Row"></div>
+    
+        <div class="row" id="rowImgSecondTex">
+        <div class="col" id="colText2">  
+            <p class="textoPosImagem">Cuidar de si mesmo é essencial para a saúde e o bem-estar. Priorizando o autocuidado, ganhamos energia e resiliência para enfrentar desafios e prevenir doenças físicas e mentais. Práticas simples, como alimentação balanceada, exercícios, sono adequado e relaxamento, fazem grande diferença. Reservar tempo para atividades que trazem alegria melhora a qualidade de vida e nos prepara para ajudar os outros.</p>
+        </div>
+        
+        <div class="spaceImgMulherHomem"></div>
+    
+        <div class="col" id="imgHomemContThree">
+            <img class="imagemHomemTexto" src="./IMG/homem.png" alt="imagem de um homem sorrindo">
+        </div>
+        </div>
+    </div>
+    
+    <div class="circleMedio2"></div>
+
+    <div class="spaceParaContainer4e5"></div>
+    
+    
+    <div class="container text-center" id="containerTextCenterFour">
+        <div class="row justify-content-md-center">
+        <div class="col col-lg-2"></div>
+        <div class="col-md-auto" id="titleColAutoContFour">
+            <h1>Problemas Mentais Mais Comuns no Mundo</h1> 
+        </div>
+        <div class="col col-lg-2"></div>
+        </div>
+
+        <div class="circleMedio3"></div>
+        
+        <div class="spaceParaRowDoContainer2e3"></div>
+
+        <div class="row justify-content-md-center"> 
+        <div class="col col-lg-2"></div>
+        <div class="col-md-auto" id="paragrafContFour">
+            <p>A depressão e os transtornos de ansiedade estão entre os distúrbios mentais mais frequentes globalmente. Apesar de serem menos prevalentes, o Transtorno Obsessivo-Compulsivo (TOC), distúrbios alimentares como a anorexia, além do transtorno bipolar e a esquizofrenia, também são condições significativas que afetam a saúde mental.
+            </p>
+            
+            <p>Esses transtornos manifestam uma variedade de sintomas, emoções, pensamentos e comportamentos que exigem atenção. O diagnóstico e tratamento adequados são essenciais para melhorar a qualidade de vida dos pacientes.
+            </p>
+            
+            <p>Além disso, esses transtornos podem piorar com o tempo se não forem tratados e acompanhados. É fundamental estar atento aos seguintes sinais e sintomas:
+            </p>
+            
+            <br><br>
+
+            <ul>
+                <li>
+                    Tristeza persistente;
+                </li>
+                <li>
+                    Perda de interesse em atividades prazerosas;
+                </li>
+                <li>
+                    Dificuldade de concentração;
+                </li>
+                <li>
+                        Cansaço extremo e falta de vontade para realizar atividades básicas, como higiene pessoal
+                </li>
+                <li>
+                        Alterações no sono e no apetite
+                </li>
+                <li>
+                    Sensação constante de medo e agitação, com a impressão de que algo ruim está prestes a acontecer
+                </li>
+                <li>
+                    Sobrecarga emocional que desestabiliza a pessoa
+                </li>
+                <li>
+                    Dependência química e alcoólica
+                </li>
+            </ul>
+
+            <br><br>
+
+            <p id="pAtentarAlert">
+                Atentar-se às suas necessidades e limites, buscando ajuda para promover o bem-estar emocional, é de extrema importância.
+            </p>
+        </div>
+        <div class="col col-lg-2"></div>
+        </div>
+    </div>
+    
+    <div class="circleMedio4"></div>
+
+    <div class="circleGrande3"></div>
+
+    <div class="spaceParaContainer5e6"></div>
+    
+</section>
+
+<section id="sectionSecond">
+    <div class="container text-center" id="cardSectionSecond">
+        <div class="row justify-content-md-center">
+        <div class="col col-lg-2" style="width: 0px">
+        </div>
+        <div class="col-md-auto" id="colCardInfoSection">
+            <div class="cardInfoSection">
+                <div class="titleCardInfo"> 
+                    <h2>Como fazer um Autocuidado</h2>
+                </div>
+                <br class="quebraLinAutoNumber">
+                <div class="container text-center">
+                    <div class="row" id="rowInfo">
+                        <div class="col-6" style="width: 200px">
+                            <div class="bolNumber">
+                                <p>1</p>
+                            </div>  
+                        </div>
+                        
+                        <div class="quebraEntreBolText"></div>
+
+                        <div class="col-6" id="autoFisico">
+                            <h3>Autocuidado Físico:</h3>
+                            <ul>
+                                <li><span>Exercício Regular:</span> Praticar atividades físicas regularmente, como caminhadas, corridas, ioga ou esportes.</li>
+                                <li><span>Alimentação Saudável:</span> Comer uma dieta equilibrada, rica em frutas, vegetais, proteínas magras e grãos integrais.</li>
+                                <li><span>Sono de Qualidade:</span> Dormir o suficiente e manter uma rotina regular de sono.</li>
+                            </ul>
+                        </div>
+                        
+                        <hr style="opacity: 0; height: 60px;">
+                        
+                        <div class="spacePonti"></div> 
+                        
+                        <hr style="opacity: 0; height: 60px;">
+                        
+                        <div class="col-6" style="width: 200px">
+                            <div class="bolNumber">
+                                <p>2</p>
+                            </div>  
+                        </div>
+
+                        <div class="quebraEntreBolText"></div>
+
+                        <div class="col-6" id="autoEmocio">
+                            <h3>Autocuidado Emocional:</h3>
+                            <ul>
+                                <li><span>Expressão das Emoções:</span> Encontrar maneiras saudáveis de expressar sentimentos, como através da escrita, arte ou conversas com amigos e familiares.</li>
+                                <li><span>Autocompaixão:</span> Ser gentil consigo mesmo, evitando a autocrítica severa e praticando o perdão.</li>
+                            </ul>
+                        </div>
+                        
+                        <hr style="opacity: 0; height: 60px;">
+                        
+                        <div class="spacePonti"></div> 
+                        
+                        <hr style="opacity: 0; height: 60px;">
+                        
+                        <div class="col-6" style="width: 200px">
+                            <div class="bolNumber">
+                                <p>3</p>
+                            </div>  
+                        </div>
+                        
+                        <div class="quebraEntreBolText"></div>
+
+                        <div class="col-6" id="autoSocial">
+                            <h3>Autocuidado Social:</h3>
+                            <ul>
+                                <li><span>Conexões Positivas:</span> Manter e cultivar relacionamentos saudáveis e de apoio.</li>
+                                <li><span>Limites Saudáveis:</span> Estabelecer e respeitar limites pessoais para proteger seu bem-estar.</li>
+                            </ul>
+                        </div>
+                        
+                        <hr style="opacity: 0; height: 60px;">
+                        
+                        <div class="spacePonti"></div> 
+                        
+                        <hr style="opacity: 0; height: 60px;">
+                        
+                        <div class="col-6" style="width: 200px">
+                            <div class="bolNumber">
+                                <p>4</p>
+                            </div>  
+                        </div>
+
+                        <div class="quebraEntreBolText"></div>
+
+                        <div class="col-6" id="autoMental">
+                            <h3>Autocuidado Mental:</h3>
+                            <ul>
+                                <li><span>Estimulação Cognitiva:</span> Engajar-se em atividades que desafiem a mente, como leitura, quebra-cabeças, ou aprender algo novo.</li>
+                                <li><span>Mindfulness e Meditação:</span> Praticar técnicas de atenção plena e meditação para reduzir o estresse e aumentar a clareza mental.</li>
+                            </ul>
+                        </div>
+                        
+                        <hr style="opacity: 0; height: 60px;">
+                        
+                        <div class="spacePonti"></div> 
+                        
+                        <hr style="opacity: 0; height: 60px;">
+                        
+                        <div class="col-6" style="width: 200px">
+                            <div class="bolNumber">
+                                <p>5</p>
+                            </div>  
+                        </div>
+
+                        <div class="quebraEntreBolText"></div>
+
+                        <div class="col-6" id="autoEspirit">
+                            <h3>Autocuidado Espiritual:</h3>
+                            <ul>
+                                <li><span>Conexão com Valores e Crenças:</span> Refletir sobre suas crenças, valores e o propósito de vida.</li>
+                                <li><span>Práticas Espirituais:</span> Participar de atividades espirituais ou religiosas que tragam paz e conforto, como oração, meditação ou contemplação na natureza.</li>
+                            </ul>
+                        </div>
+                        
+                        <hr style="opacity: 0; height: 60px;">
+                        
+                        <div class="spacePonti"></div> 
+                        
+                        <hr style="opacity: 0; height: 60px;">
+                        
+                        <div class="col-6" style="width: 200px">
+                            <div class="bolNumber">
+                                <p>6</p>
+                            </div>  
+                        </div>
+
+                        <div class="quebraEntreBolText"></div>
+
+                        <div class="col-6" id="autoProfiss">
+                            <h3>Autocuidado Profissional:</h3>
+                            <ul>
+                                <li><span>Equilíbrio Trabalho-Vida:</span> Estabelecer limites claros entre trabalho e vida pessoal para evitar o esgotamento.</li>
+                                <li><span>Desenvolvimento Profissional:</span> Buscar oportunidades de crescimento e desenvolvimento na carreira.</li>
+                            </ul>
+                        </div>
+                        
+                        <hr style="opacity: 0; height: 60px;">
+                        
+                        <div class="spacePonti"></div> 
+                        
+                        <hr style="opacity: 0; height: 60px;">
+                        
+                        <div class="col-6" style="width: 200px">
+                            <div class="bolNumber">
+                                <p>7</p>
+                            </div>  
+                        </div>
+
+                        <div class="quebraEntreBolText"></div>
+
+                        <div class="col-6" id="autoLudico">
+                            <h3>Autocuidado Lúdico:</h3>
+                            <ul>
+                                <li><span>Tempo para Hobbies e Lazer:</span> Dedicar tempo a atividades que você gosta e que trazem alegria, como hobbies, esportes ou artes.</li>
+                                <li><span>Relaxamento e Diversão:</span> Fazer pausas regulares para descansar e se divertir, assistindo a filmes, lendo livros ou passando tempo com amigos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-2">
+        </div>
+        </div>
+    </div>
+</section>
+    
+    <div class="spaceMainFooter"></div>
+
+    <div class="quebraMainFooters"></div>
+    
+<footer>
+    <div class="container text-center">
+        <div class="row" id="rowPrimary">
+            <div class="col" id="colFooter">
+                <img src="./IMG/LogoBranca2.png" alt="LOGO DO SERENUS EM COR BRANCA">
+                <p class="footerP">Sua Paz, Nossa Missão, <br> Cuidando da sua Mente, <br> Transformando Vidas.</p>
+                <div class="footerTwoP">Para mais ajuda, Ligue para a CVV <br> <span>LIGUE: 188</span>
+                </div>
+            </div>
+
+            <hr class="spaceQuebraFooter">
+
+            <div class="col" id="menuFooter">
+                <div id="infoMenuFooter">
+                    <h4>Páginas</h4>
+                    <a href="#">Inicio</a>
+                        <div class="spaceAdoFooter"></div>
+                    <a href="#">Sobre Nós</a>
+                        <div class="spaceAdoFooter"></div>
+                    <a href="#">Sintomas</a>
+                </div>
+            </div>
+
+            <div id="menuFooterSecond"> 
+                <br><br>
+                <h4>Páginas</h4>
+                <a href="#">Inicio</a>
+                    <br>
+                <a href="#">Sobre Nós</a>
+                    <br>
+                <a href="#">Sintomas</a>
+            </div>
+
+            <hr class="spaceQuebraFooter">
+
+            <div class="col" id="contatoFooter">
+            <h4>Contato</h4>
+            <br><br>
+            <div class="enviarMsg">
+                <label>
+                    <img src="./IMG/setaDireita.svg" alt="iconeSvg">
+                </label>
+                <input placeholder="   Envie uma mensagem">
+            </div>
+        
+            </div>
+        </div>
+
+        <div class="card text-center" id="cardTextPrimaryFooter">
+        <div class="card-header">
+            <div class="ligueFooter">
+                <h3>Por favor Ligue para:</h3>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col" id="sobreCol1Footer">
+                    <h4>CVV</h4>
+                    <h4>LIGUE : 188</h4>
+                    <p>Caso você precise de apoio Emocional e ajuda contra a prevenção de suicidio. oferecido por vonlutarios.</p>
+                </div>
+                <div class="col" id="sobreCol2Footer">
+                    <h4>Samu</h4>
+                    <h4>LIGUE : 192</h4>
+                    <p>Caso seja Urgente e tenha No caso de urgências e emergências de vários tipos, como traumática, pediátrica, psiquiátrica, entre outras.ocorrido algo</p>
+                </div>
+                <div class="col" id="sobreCol3Footer">
+                    <h4>Polícia</h4>
+                    <h4>LIGUE : 190</h4>
+                    <p>Caso você esteja sendo ameaçado ou uma pessoa agressiva esteja te machucando </p>
+                </div>
+                <div class="col" id="sobreCol4Footer">
+                    <h4>Bombeiros</h4>
+                    <h4>LIGUE : 193</h4>
+                    <p>Resgate para tentativa de suicidio,acidentes e incêndio e outros tipos de apoio emocional</p>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+        <br><br>
+
+        <div class="cardResponsiveFooter">
+            <div class="contatoFooterEmergency">
+                <h3>Por favor Ligue para:</h3>
+                <br>
+                
+                <h4>CVV</h4>
+                <p class="infoContOne">
+                    <span>LIGUE: 188</span>
+                    <br>
+                    Caso você precise de <br> apoio Emocional e <br> ajuda contra a <br> prevenção de suicidio <br> oferecido po <br> voluntários
+                </p>
+
+                <div class="spaceConttFooter"></div>
+
+                <h4>Samu</h4>
+                <p class="infoContTwo">
+                <span>LIGUE: 192</span>
+                <br>
+                Caso seja Urgente e <br> No caso de <br> urgências e <br> emergências de vários <br> tipos como traumática, <br> pediátrica, psiquiátrica, <br> entre outras, ocorrido <br> algo.
+                </p>
+
+                <div class="spaceConttFooter"></div>
+
+                <h4>Polícia</h4>
+                <p class="infoContThree">
+                <span>LIGUE: 190</span>
+                <br>
+                Caso você esteja <br> sendo ameaçado ou <br> uma pessoa agressiva <br> esteja te <br> machucando.
+                </p>
+
+                <div class="spaceConttFooter"></div>
+
+                <h4>Bombeiros</h4>
+                <p class="infoContFour">
+                <span>LIGUE: 193</span>
+                <br>
+                Resgate para tentativa <br> de suicidio, acidentes e <br> incêndio e outros <br> tipos de apoio <br> emocional.
+                </p>
+
+                <div class="spaceConttFooter"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card text-center" id="cardTextSecondFooter">
+    <div class="card-footer text-body-secondary">
+        <br><br>
+        <a href="#" class="ahrefIcons">
+        <img src="./IMG/whatsapp.png" alt="icone do whatsapp" class="imagemIcon">
+        <img src="./IMG/linkedin.png" alt="icone do linkedin" class="imagemIcon">
+        <img src="./IMG/instagram.png" alt="icone do instagram" class="imagemIcon">
+        <img src="./IMG/github.png" alt="icone do github" class="imagemIcon">
+        </a>
+        <p>Copyright© 2023 - Fatec Taquaritinga</p>
+    </div>
+    </div>
+</footer>
+    
+</body>
+    <!--JAVASCRIPT-->
+    <script src="./JAVASCRIPT/script.js"></script>
+
+    <!--JAVASCRIPT BOODSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

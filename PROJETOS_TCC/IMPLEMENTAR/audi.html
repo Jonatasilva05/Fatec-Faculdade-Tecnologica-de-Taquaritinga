@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="audio()">audio</button>
+
+    <audio id="myaudi">
+        <source src="./fala.mp3" type="audio/mpeg">
+        seu navegador nao suporta
+    </audio>
+    
+    <script>
+        function audio() {
+            var audio = document.querySelector("#myaudi");
+            audio.play();
+        }
+    </script>
+</body>
+</html>
