@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 23-03</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <main>
+    <div id="formArea" class="form-area">
+        <input type="number" id="txtValor1" placeholder="Valor 1">
+        <input type="number" id="txtValor2" placeholder="Valor 2">
+        <button onclick="somarValores()">Somar</button>
+    </div>
+
+    <div id="resultado" class="resultado"></div>
+
+    <div id="loader" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(255,255,255,0.9); z-index:9999; justify-content:center; align-items:center; flex-direction:column;">
+        <div class="spinner"></div>
+        <p>Realizando Operação! Aguarde...</p>
+    </div>
+</main>
+
+    
+</body>
+<script src="./script.js"></script>
+</html>
