@@ -1,0 +1,5 @@
+myAppEmBranco = app em branco com javascript
+
+myAppLatestType = app com react expo { Vale lembrar que para fazer o app expo resetar execute "npm run reset-project" }
+
+myAppTypeBranco = app em branco com typescript
