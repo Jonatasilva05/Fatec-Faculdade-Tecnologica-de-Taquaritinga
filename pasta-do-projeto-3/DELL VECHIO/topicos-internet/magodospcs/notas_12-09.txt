@@ -1,0 +1,42 @@
+🔹 Abstração
+
+✅ O que você disse: "abstração é para abstrair uma função de um objeto."
+⚠️ Ajuste: Abstração não é só “abstrair funções”, mas isolar as características essenciais de um objeto, mostrando apenas o que é relevante e escondendo detalhes desnecessários.
+👉 Exemplo: um carro tem volante, rodas e motor. Para o motorista, o que importa é dirigir (funções como acelerar, frear), mas os detalhes internos do motor ficam ocultos.
+
+🔹 Herança
+
+✅ O que você disse: "herança é a capacidade de estender uma função para outros objetos."
+⚠️ Ajuste: Não é apenas funções, mas atributos e comportamentos. A herança permite que uma classe (filha) reaproveite código de outra (pai).
+👉 Exemplo: Cachorro e Gato podem herdar de Animal, recebendo atributos como nome, idade e métodos como comer().
+
+🔹 Polimorfismo
+
+✅ O que você disse: "a capacidade de uma função ser sobreescrita da mesma função ou a possibilidade de alterar a função para cada tipo."
+💯 Está certo! Só complementando: polimorfismo significa "muitas formas". Uma mesma função pode se comportar diferente conforme o objeto.
+👉 Exemplo: Animal.falar() pode ser "au au" para um cachorro e "miau" para um gato.
+
+🔹 Encapsulamento
+
+✅ O que você disse: "garante a segurança, pois não mostra aos usuários o que está acontecendo, traz para ele apenas o resultado."
+💯 Está certinho! Encapsulamento é proteger os dados internos de um objeto, controlando o acesso (com private, protected, public). O usuário interage apenas por métodos seguros.
+👉 Exemplo: em uma conta bancária, não se mexe diretamente no saldo — usa-se métodos como depositar() e sacar().
+
+📌 Resumo Final Corrigido:
+
+Abstração → destacar apenas as partes essenciais do objeto.
+
+Herança → reaproveitar atributos e métodos de outra classe.
+
+Polimorfismo → um método pode ter diferentes comportamentos.
+
+Encapsulamento → proteger dados internos, expondo só o necessário.
+
+-----
+
+| Pilar              | Definição                                                                    | Exemplo prático                                                                                     |
+| ------------------ | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| **Abstração**      | Destacar apenas as características essenciais, ocultando detalhes.           | Um **carro** expõe *acelerar()* e *frear()*, mas não mostra como o motor funciona internamente.     |
+| **Herança**        | Permite que uma classe herde atributos e métodos de outra.                   | `Cachorro` e `Gato` **herdam** de `Animal` atributos como *nome*, *idade* e métodos como *comer()*. |
+| **Polimorfismo**   | Um mesmo método pode ter comportamentos diferentes dependendo do objeto.     | O método *falar()* em `Animal` pode ser *“au au”* no `Cachorro` e *“miau”* no `Gato`.               |
+| **Encapsulamento** | Protege os dados internos, permitindo acesso apenas via métodos controlados. | Em uma **conta bancária**, o saldo não é alterado diretamente, mas por *depositar()* ou *sacar()*.  |

@@ -1,0 +1,4 @@
+Para configurar o xampp para ter uma segurança
+
+    DocumentRoot "C:/xampp/htdocs/magodospcs"
+    <Directory "C:/xampp/htdocs/magodospcs">
