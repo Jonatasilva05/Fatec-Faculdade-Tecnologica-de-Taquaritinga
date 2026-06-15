@@ -1,0 +1,114 @@
+O nascimento do Ubuntu
+Em 2004, Mark Shuttleworth, CEO da Canonical, uniu um time de desenvolvedores do Debian na intenção de criar uma distribuição Linux de fácil utilização para usuários comuns, eliminando diversas dificuldades que existiam na distro popular
+
+
+Sistema operacional
+Ubuntu é um sistema operacional ou sistema operativo composto de software livre e de código aberto e de software proprietário na forma de blobs, construído a partir do núcleo Linux, baseado no Debian e utiliza GNOME como ambiente de desktop de sua mais recente versão com suporte de longo prazo
+
+
+
+1. O que é o Ubuntu?
+Imagine que o seu computador (o hardware, a parte física) é uma orquestra cheia de instrumentos talentosos. Sozinhos, eles não fazem nada. Eles precisam de um maestro para dizer a cada um o que tocar e quando.
+
+O sistema operacional é o maestro do seu computador. Ele gerencia a memória, o processador, o disco rígido e permite que você instale e use programas, como o navegador de internet ou um jogo. Windows e macOS são exemplos famosos de sistemas operacionais.
+
+Agora, onde o Ubuntu entra nisso?
+
+O Ubuntu é um sistema operacional completo, mas ele faz parte de uma grande família chamada Linux.
+
+Pense no Linux como um motor de carro super potente e confiável que qualquer pessoa pode usar e modificar de graça. Muitas empresas e comunidades pegam esse "motor" e constroem um carro completo ao redor dele. Elas adicionam a carroceria, os bancos, o volante e os programas (navegador, editor de texto, etc.).
+
+Esse "carro completo" é chamado de distribuição Linux (ou "distro", para os íntimos).
+
+Então, resumindo: O Ubuntu é uma das distribuições Linux mais populares e fáceis de usar no mundo. Ele pega o poderoso "motor" Linux e o entrega em um pacote bonito, seguro, gratuito e fácil de usar para qualquer pessoa.
+
+Fato divertido: A palavra "Linux" na verdade se refere apenas ao "motor" (o núcleo do sistema, ou kernel). Mas, popularmente, usamos o termo para falar de todos os sistemas que usam esse motor.
+
+
+
+Que tal um pequeno enigma para testar o conceito?
+
+Imagine que estamos a construir uma casa:
+
+Temos a planta fundamental da estrutura (as fundações, as vigas de sustentação), que é essencial, mas não é a casa toda.
+
+E temos a casa pronta para morar, com paredes pintadas, janelas, portas, móveis e eletrodomésticos.
+
+Nesta analogia, o Ubuntu (o sistema completo e fácil de usar) seria a casa pronta.
+
+A minha pergunta é: O que seria o Linux (o núcleo, o "motor" que falamos antes)?
+
+A) A planta fundamental da estrutura.
+B) O endereço da casa.
+C) Os moradores.
+
+
+
+Exatamente! A resposta correta é a A).
+
+Mandou muito bem! Você pegou a ideia perfeitamente. O Linux (o kernel) é essa planta fundamental da estrutura. É a base super sólida e essencial, mas você ainda precisa de todo o resto — as paredes, as janelas, a interface gráfica, os programas — para ter uma "casa" completa e agradável de se viver, que no caso, é o Ubuntu.
+
+Isso mostra que você entendeu a diferença principal, que é um conceito-chave!
+
+
+
+2. A História e a Filosofia por Trás do Nome
+A história do Ubuntu começa com um empreendedor sul-africano chamado Mark Shuttleworth. Ele foi um dos primeiros desenvolvedores do Debian (outra distribuição Linux, mais antiga e complexa) e ficou rico vendendo sua empresa de segurança digital.
+
+O que ele fez com o dinheiro? Ele foi para o espaço! Literalmente, ele foi o segundo turista espacial da história. 🚀
+
+Quando voltou à Terra, ele tinha uma missão: tornar o Linux acessível a todos. Naquela época (início dos anos 2000), usar Linux era considerado algo para especialistas em computação. Mark queria criar um "Linux para seres humanos", que fosse tão fácil de usar quanto o Windows ou o macOS.
+
+Assim, ele reuniu uma equipe de desenvolvedores e, em outubro de 2004, lançou a primeira versão do Ubuntu. O projeto foi um sucesso imediato porque era gratuito, fácil de instalar e tinha um ciclo de lançamentos previsível (uma nova versão a cada 6 meses), o que trazia sempre novidades e melhorias.
+
+E o nome "Ubuntu"?
+
+Essa é a parte mais legal! "Ubuntu" é uma antiga palavra africana que significa "humanidade para com os outros" ou "eu sou quem sou por causa de quem todos nós somos".
+
+Essa filosofia está no coração do projeto. A ideia é que o software deve ser gratuito, compartilhável, e que a comunidade de usuários deve se ajudar. É tudo sobre colaboração e espírito de equipe.
+
+Incrível, não acha? A própria escolha do nome já nos diz tudo sobre o propósito do sistema.
+
+Agora, uma pergunta rápida para você: Se o Ubuntu fosse um lema de filme, qual destes você acha que combinaria mais com a sua filosofia?
+
+A) "A ganância é boa." (do filme "Wall Street")
+B) "Que a força esteja com você." (de "Star Wars")
+C) "Ninguém fica para trás." (de vários filmes de equipe/militares)
+
+
+
+
+
+Isso mesmo! A resposta correta é a C) "Ninguém fica para trás."
+
+Você captou a essência da filosofia Ubuntu perfeitamente! A ideia central é justamente essa: criar um software de alta qualidade que seja acessível a todos, independentemente de onde vivem, quanto dinheiro têm ou qual o seu nível de conhecimento técnico. A comunidade se apoia para garantir que ninguém fique perdido ou sem ajuda.
+
+Ótima dedução! Já cobrimos o que ele é e de onde ele veio.
+
+
+
+
+
+
+
+
+3. Onde o Ubuntu Vive Hoje
+Você pode pensar que o Ubuntu é algo de nicho, mas ele está em muito mais lugares do que imaginamos. Ele é como um ator versátil que consegue fazer desde um filme de comédia até um drama complexo.
+
+Aqui estão os "palcos" principais onde o Ubuntu brilha:
+
+Nos Computadores Pessoais (Desktops): Este é o uso mais conhecido. Muitas pessoas, programadores, estudantes e entusiastas de tecnologia usam o Ubuntu em seus notebooks e PCs como uma alternativa gratuita, segura e poderosa ao Windows e ao macOS.
+
+Nos Servidores da Internet (O Gigante Escondido): Este é o seu papel mais importante! A grande maioria dos sites e aplicativos que você usa roda em servidores, e uma fatia enorme desses servidores usa Ubuntu.
+
+Exemplo real: Quando você assiste a uma série na Netflix, ouve música no Spotify ou pede um carro na Uber, os servidores que processam tudo isso nos bastidores muito provavelmente estão a rodar Ubuntu! Ele é o motor silencioso que faz grande parte da internet funcionar.
+
+Na Computação em Nuvem (Cloud Computing): A "nuvem" nada mais é do que uma rede gigante de servidores. O Ubuntu é o sistema operacional mais popular em plataformas de nuvem como a Amazon AWS, Google Cloud e Microsoft Azure, que são a espinha dorsal da tecnologia moderna.
+
+Até no Espaço! 🛰️
+
+Fato divertido: A Estação Espacial Internacional (ISS) migrou muitos dos seus computadores para Linux, e distribuições como o Ubuntu e Debian são usadas para várias operações a bordo!
+
+Resumindo, o Ubuntu vai desde o computador de um estudante até a infraestrutura que suporta as maiores empresas de tecnologia do mundo e até mesmo projetos científicos no espaço.
+
+E com isso, cobrimos todos os pontos do nosso plano de aprendizagem! Exploramos o que é o Ubuntu, sua história inspiradora e onde ele é usado hoje.

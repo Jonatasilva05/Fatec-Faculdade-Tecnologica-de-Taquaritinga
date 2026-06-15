@@ -1,0 +1,150 @@
+Installing, this may take a few minutes...
+Please create a default UNIX user account. The username does not need to match your Windows username.
+For more information visit: https://aka.ms/wslusers
+Enter new UNIX username: user
+New password: user
+Retype new password: user
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ wsl --install
+Copyright (c) Microsoft Corporation. Todos os direitos reservados.
+
+Uso: wsl.exe [Argument] [Options...] [CommandLine]
+
+Argumentos para executar binários do Linux:
+
+    Se nenhuma linha de comando for fornecida, wsl.exe iniciará o shell padrão.
+
+    --exec, -e <CommandLine>
+        Executar o comando especificado sem usar o shell do Linux padrão.
+
+    --
+        Transmita a linha de comando restante como está.
+
+Opções:
+    --cd <Directory>
+        Define o diretório especificado como o diretório de trabalho atual.
+        Se ~ for usado, o caminho inicial do usuário do Linux será usado. Se o caminho começar
+        com um caractere, / ele será interpretado como um caminho Linux absoluto.
+        Caso contrário, o valor deve ser um caminho absoluto do Windows.
+
+    --distribuição,-d <Distro>
+        Executar a distribuição especificada.
+
+    --usuário,-u <UserName>
+        Executar como o usuário especificado.
+
+Argumentos para gerenciar o Subsistema do Windows para Linux:
+
+    --ajuda
+        Exibir informações de uso.
+
+    --install [Opções]
+        Instale distribuições adicionais para o Subsistema do Windows para Linux.
+        Para uma lista de distribuições válidas, use "wsl --list --online".
+            --distribution, -d [Argumento]
+                Baixa e instala uma distribuição pelo seu nome.
+
+                Argumentos:
+                    Um nome de distribuição válido (sem diferenciar maiúsculas de minúsculas).
+
+                Exemplos:
+                    wsl --install -d Ubuntu
+                    wsl --install --distribution Debian
+
+    --set-default-version <Version>
+        Altera a versão da instalação padrão das novas distribuições.
+
+    --shutdown
+        Encerra imediatamente todas as distribuições em execução e a
+        máquina virtual utilitária leve WSL 2.
+
+    --status
+        Mostra o status do Subsistema do Windows para Linux.
+
+    --update [Options]
+        Se nenhuma opção for especificada, o kernel do WSL 2 será atualizado
+        para a versão mais recente.
+
+        Opções:
+            --rollback
+                Reverte para a versão anterior do kernel WSL 2.
+
+            --inbox
+                Atualiza apenas o kernel WSL 2 da caixa de entrada. Não instala o WSL da Microsoft Store.
+
+            --web-download
+                Baixa a versão mais recente do WSL da Internet em vez da Microsoft Store.
+
+Argumentos para gerenciar distribuições no Subsistema do Windows para Linux:
+
+    --export <Distro> <FileName>
+        Exporta a distribuição para um arquivo tar.
+        O nome do arquivo pode ser - para saída padrão.
+
+    --import <Distro> <InstallLocation> <FileName> [Options]
+        Importa o arquivo tar especificado como uma nova distribuição.
+        O nome do arquivo pode ser - para entrada padrão.
+
+        Opções:
+            --version <Version>
+                Especifica a versão a ser usada para a nova distribuição.
+
+    --list, -l [Options]
+        Lista as distribuições.
+
+        Opções:
+            --all
+                Lista todas as distribuições, incluindo distribuições que estão
+                atualmente sendo instaladas ou desinstaladas.
+
+            --running
+                Listar apenas as distribuições que estão em execução no momento.
+
+            --quiet, -q
+                Mostrar apenas os nomes das distribuições.
+
+            --verbose, -v
+                Mostrar informações detalhadas sobre todas as distribuições.
+
+            --online, -o
+                Exibe uma lista de distribuições disponíveis para instalação com "wsl --install".
+
+    --set-default, -s <Distro>
+        Define a distribuição como padrão.
+
+    --set-version <Distro> <Versão>
+        Altera a versão da distribuição especificada.
+
+    --terminate, -t <Distro>
+        Encerra a distribuição especificada.
+
+    --unregister <Distro>
+        Cancela o registro da distribuição e exclui o sistema de arquivos raiz.
+
+
+
+
+
+
+
+
+ wsl --update
+Instalando: Subsistema do Windows para Linux
+Subsistema do Windows para Linux foi instalado.

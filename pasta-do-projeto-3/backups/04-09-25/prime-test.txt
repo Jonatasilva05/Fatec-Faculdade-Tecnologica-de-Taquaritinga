@@ -1,0 +1,4 @@
+Depois de ter dado todos os erros possiveis para cofigurar e intalar, que tal testarmos?
+
+Aqui faremos um passo a paso uma sequência completa de comandos do zero, onde você cria PHP + MySQL + pasta do site, e já testa tudo, sem erros de container inexistente. inclusive usaremos remote code para facilicar o codamento do php e tudo manual com docker run e depois um teste com docker compose
+

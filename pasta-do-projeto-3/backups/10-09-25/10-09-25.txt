@@ -1,0 +1,11 @@
+para fazer um projeto com mysql, phpmyadmin, php e banco de dados vamos la
+
+primeiro crie uma rede
+docker network create <NOME DA REDE>
+
+no meu caso usarei um nome generico
+
+docker network create REDE1
+
+importe lembrar 
+
