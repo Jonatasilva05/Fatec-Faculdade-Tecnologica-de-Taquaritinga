@@ -1,0 +1,9 @@
+Docker Hub (ver imagens)
+
+Conceito de virtualização.
+
+Testar WSL.
+
+Rodar containers simples.
+
+Instanciar PHP e banco.

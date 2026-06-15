@@ -1,0 +1,1 @@
+Nesse projeto vamos criar um Docker com Postgres e Node, e Express

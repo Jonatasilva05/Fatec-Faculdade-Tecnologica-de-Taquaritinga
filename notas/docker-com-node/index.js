@@ -1,0 +1,1 @@
+console.log("Docker + Node.js funcionando!");

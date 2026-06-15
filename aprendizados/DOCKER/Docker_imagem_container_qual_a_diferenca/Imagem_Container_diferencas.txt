@@ -1,0 +1,51 @@
+imagem ou container
+
+imagem é o arquivo que o docker gera com todas as especificações para que a aplicaçao/software funcione corretamente, para que o container 
+
+container é a execução da imagem, instancia da imagem, quando esta funcionando ela é container e quando nao esta se torna a imagem novamente, container porque ele é auto contido, é uma especificaçaõ que nao sabe o que tem dentro
+
+para ter uma explicação mais didatica imagine a Imagem Docker = A Receita 📜
+Uma imagem é um pacote, um "template" estático e imutável. Pense nela como uma receita de bolo detalhada.
+
+ºA receita lista todos os ingredientes (o código da sua aplicação, bibliotecas, ferramentas do sistema).
+
+ºEla tem o modo de preparo (as configurações e os comandos para executar a aplicação).
+
+A receita em si não faz nada. Ela apenas existe, guardada no seu livro de receitas (seu computador) ou na grande biblioteca de receitas (o Docker Hub). Você não pode "comer" a receita.
+
+Ação principal ou seja a mao na massa quem faz é Você tanto o build (constrói) que é contruir ou o pull (puxa) pegar uma imagem pronta e usar ela.
+
+
+
+
+
+Contêiner Docker = O Bolo 🎂
+Um contêiner é o resultado final: o bolo pronto, assado e comestível. É uma instância em execução da sua imagem.(ou seja quanndo a imagem esta em execução ela é um container 'preparando, moldando, assando' e quando ela esta "parada" ela só é a imagem 'receita')
+
+ºUsando a mesma receita (imagem), você pode fazer vários bolos idênticos (vários contêineres).
+
+ºCada bolo (contêiner) é uma entidade separada. Você pode comer um, guardar outro na geladeira e dar um terceiro para um amigo.(sendo assim podera criar varios conteiner, ex um para o front, o outro para o bback, outro para apenass o banco, outro para APIs e assim por diante)
+
+ºO contêiner é "vivo". Ele tem um estado, está rodando, pode ser iniciado, parado e excluído.
+
+Ação principal quem faz é Você run (executa) um contêiner a partir de uma imagem.
+
+
+Característica		Imagem (A Receita)			Contêiner (O Bolo)
+O que é?		Um template, um pacote imutável.	Uma instância em execução de uma imagem.
+Estado	Estático. 	Não muda.				"Vivo". Tem um estado (rodando, parado, etc.).
+Exemplo	O nginx:1.21 que você baixou com o docker pull.		O servidor web que começa a rodar após o docker run.
+
+Quando você fez o docker pull nginx:1.21, você pegou a "receita" do servidor web. Para de fato ter um servidor no ar, você usaria docker run nginx:1.21, que "assaria o bolo", ou seja, criaria um contêiner a partir daquela imagem.
+
+de resumo imagem é a 'receita' nela contem todas as configurações, extensões e tudo mais que é necessário para que a aplicação/sofware funcione
+
+e o container é a imagem funcinando, é o projeto pronto e em execução com todos os ingredientes retornando um bolo quentinho e pronto, ou seja seu projeto funcionando e estavél
+
+
+
+
+
+
+
+

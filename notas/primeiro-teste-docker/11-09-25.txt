@@ -1,0 +1,125 @@
+Projeto rapido e basico, Docker com mysql, php, phpmyadmin
+
+Primeiro vamos criar uma rede de conexao para o nosso projeto
+
+docker network create <NOME DA REDE>
+
+no meu caso irei usar REDE1
+
+docker network create REDE1
+
+--
+
+Se quiser saber se funcionou execute
+
+docker network ls
+
+NETWORK ID     NAME      DRIVER    SCOPE
+261ce2acb328   REDE1     bridge    local
+346aaaecbeb6   bridge    bridge    local
+decd9b9b9b41   host      host      local
+b8db33d18e97   none      null      local
+
+aparecera algo similiar ou igual a isso
+
+--
+
+Depois de criado a rede onde ficara os nossos dados vamos criar um Volume, ou seja, onde ficara os dados do nosso projeto
+
+
+para criarmos um volume digite
+
+docker volume create <NOME DO VOLUME>
+
+no meu caso irei usar VOL1
+
+docker volume create VOL1
+
+é de extrema importancia lembrar que sempre é bom manter um padrao, ou todas as letras grandes ou pequenas e jamais use caracteres especiais
+
+--
+
+Se caso tiveres duvida da criação digite 
+
+docker volume ls
+
+DRIVER    VOLUME NAME
+local     VOL1
+
+aparecera algo similar a esse
+
+--
+
+agora vamos fazer as instalações caso no seu docker nao tenha
+
+abra o navegador e procure por dockerhub
+
+ou acesse o link abaixo
+
+https://hub.docker.com/
+
+
+na barra de pesquisa procure por 
+
+mariadb assim que encontrar uma com o selo oficial abra 
+
+e depois procure por tags
+
+la tera varias versões mas hoje trabalharemos com a versão mais atualizada 
+
+então digite no powershell ou no prompt de comando para criarmos a imagem
+ 
+docker run -d --name MARIADB -v VOL1:/var/lib/mysql -h db --network REDE1 --env MARIADB_USER=user --env MARIADB_PASSWORD=senha12345 --env MARIADB_ROOT_PASSWORD=senharoot123 mariadb:latest
+
+
+o que é tudo isso??? linguagem grega??
+
+Calma pequeno gafanhoto vou lhe explicar ok? relaxe pegue uma pipoca e preste atenção!
+
+- docker run iniciamos a imagem
+- -d é para executa-lo em segundo plano, mas é obrigatorio colocarmos senao ele nao executa a imagem que posteriormente se torna o container
+- --name MARIADB sera para nomearmos a nossa imagem, no meu caso eu coloque MARIADB mas pode colocar da sua preferencia
+- -v VOL1:/var/lib/mysql aqui estamos dizendo ao docker que vamos criar um diretorio var/lib/mysql dentro do VOL1 por isso que colocamos o nome VOL1 antes do /var/lib/mysql, esse tipo de diretorio normalmente é o ponto padrao do mysql, no caso o /var/lib/mysql
+- -h db aqui nomeamos o hostname, que serve para referenciar um ao outro
+- --network REDE1 estamos escolhendo que rede iremos usar
+- --env MARIADB_USER=user serve para definir o nome de um novo usuário a ser criado em um banco de dados MariaDB
+- --env MARIADB_PASSWORD=senha12345 isso sera a senha do usuario user que estamos criando
+- --env MARIADB_ROOT_PASSWORD=senharoot123 essa sera a senha para acessar o phpmyadmin
+- mariadb:latest sera a versao do mariadb que queremos usar para essa imagem
+
+é de extrema importancia que 
+- MARIADB_USER
+- MARIADB_PASSWORD
+- MARIADB_ROOT_PASSWORD
+seja digitados em letrar maiusculas, e a diferença entre MARIADB_USER, MARIADB_PASSWORD e MARIADB_ROOT_PASSWORD, é que quando formos usar para cadastrar alguem ou manipular os dados, trazer eles e assim por diante usamos o MARIADB_USER, MARIADB_PASSWORD, mas quando precisamos ir a fundo e digitar o comando em SQL ou acessar o phpmyadmin usaremos entao as configurações que estao em MARIADB_ROOT_PASSWORD
+
+É IMPORTANTE AVISAR QUE, SE CASO ELE COMECAR A FAZER UM TIPO DE "DOWNLOAD" NÃO CANCELE POIS SEU DOCKER NAO TEM A DEPENDENCIA QUE FOI PEDIDA
+
+quando tiveres duvida se esta tudo certinho com a imagem que acabamos de criar execute
+docker inspect MARIADB - no caso usamos o nome que damos a imagem
+
+ele lhe trara inumeras informações, analise elas e veja se estao corretas conforme configuramos anteriormente
+
+
+agora vamos criar uma imagem para o phpmyadmin
+
+- docker run -d --name MYADMIN -h myadmin --network REDE1 -p 8080:80 phpmyadmin:latest
+
+- docker run iniciamos a container
+- -d é para executa-lo em segundo plano, mas é obrigatorio colocarmos senao ele nao executa a imagem que posteriormente se torna o container
+- --name MYADMIN sera para nomearmos a nossa imagem, no meu caso eu coloque MARIADB mas pode colocar da sua preferencia
+- -h myadmin aqui nomeamos o hostname, que serve para referenciar o container correto ao banco de dados 
+- --network REDE1 estamos escolhendo que rede iremos usar
+- -e PMA_HOST=db é a referencia para o phpmyadmin onde buscar o mariadb, é no arias db ou seja no container que contem o nome db
+- p 8080:80 aqui escolhemos a porta que vamos executar, 8080 porta externa e 80 porta interna
+dentro do container tera um phpmyadmin tera um pequeno webservice rodando na porta 80, na porta externa, ou seja a porta acessivel para o navegador acessar no caso a 8080
+
+
+- phpmyadmin:latest sera a versao do mariadb que queremos usar para essa imagem
+
+
+dica valiosa se quiser fazer um backup do volume 'virtual' abra o explorador de arquivos no caso se for o windowns e digite
+
+C:\Users\usuario-que-instalou-wls\AppData\Local\Docker\wsl\data
+ou
+C:\Users\usuario-que-instalou-wls\AppData\Local\wsl\data

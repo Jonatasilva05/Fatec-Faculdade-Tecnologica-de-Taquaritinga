@@ -1,0 +1,21 @@
+# O que é WSL
+
+O WSL (Windows Subsystem for Linux) serve para executar um ambiente Linux diretamente no Windows, permitindo que desenvolvedores e profissionais usem ferramentas, utilitários e aplicativos Linux, como o bash, sem precisar de uma máquina virtual completa ou dual-boot. Isso proporciona uma experiência integrada e produtiva para quem precisa trabalhar com ambos os sistemas, facilitando o desenvolvimento de aplicações multiplataforma e o uso de recursos de linha de comando do Linux
+
+De maneira resumida, não é necessária a instalação de uma máquina virtual em seu Windows.
+
+# Como instalar o WSL no Windows
+
+### Primeiro, verifique se sua máquina está apropriada para o uso
+- Você deve estar executando o Windows 10 versão 2004 e superior (Build 19041 e superior) ou Windows 11 para usar os comandos abaixo
+
+OBS: Caso não atenda a esses pré-requisitos, consulte o manual oficial da Microsoft: [Instalando WSL](https://learn.microsoft.com/pt-br/windows/wsl/install)
+
+Execute o Windows PowerShell ou o Prompt de Comando como administrador.
+
+### Execute o comando de instalação
+No terminal que você abriu, digite o seguinte comando para instalar o WSL junto com a distribuição padrão do Linux (Ubuntu):
+
+```bash
+wsl --install
+```

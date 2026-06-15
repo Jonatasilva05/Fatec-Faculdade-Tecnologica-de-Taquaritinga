@@ -1,0 +1,18 @@
+Os números binários são a base de todo o mundo digital em que vivemos hoje.
+Saber como eles funcionam e entendê-los é como aprender o alfabeto dos computadores.
+
+Tópico 1: O Básico do Binário vs. Decimal
+Pense no sistema de números que usamos todos os dias, o sistema decimal (ou base 10). Nós o chamamos assim porque ele usa dez símbolos diferentes para representar todos os números: 0, 1, 2, 3, 4, 5, 6, 7, 8 e 9. Quando contamos e passamos do 9, nós adicionamos uma casa à esquerda e começamos de novo (o 10, o 11, etc.).
+
+Agora, o sistema binário (ou base 2) é muito mais simples. Ele só usa dois símbolos: 0 e 1.
+
+A melhor maneira de pensar nisso é com um interruptor de luz!
+
+Um interruptor só tem dois estados: desligado ou ligado.
+
+Podemos dizer que Desligado = 0 e Ligado = 1.
+
+É só isso! Todo o universo digital, desde o seu smartphone até os supercomputadores da NASA, funciona com base nessa ideia simples de "ligado" ou "desligado", "sim" ou "não", "verdadeiro" ou "falso", representado por 1 ou 0.
+
+Um fato divertido para te ajudar a lembrar: existe uma piada clássica entre programadores que diz: "Existem 10 tipos de pessoas no mundo: as que entendem binário e as que não."
+(Se você pensar bem, "10" em binário é o número 2 em nosso sistema decimal! 😉)

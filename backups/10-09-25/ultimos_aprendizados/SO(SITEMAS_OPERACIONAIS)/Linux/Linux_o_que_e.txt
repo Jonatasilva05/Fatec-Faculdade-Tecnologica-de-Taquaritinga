@@ -1,0 +1,114 @@
+o que é linux
+sistema operacional de computadores, ele é gratuito e codigo aberto, o proprio android tem linhas linux
+
+
+
+1. O que é o Linux?
+Imagine que um sistema operacional (como o Windows ou o macOS) é um carro completo. Ele tem um motor, rodas, volante, bancos, e tudo o que você precisa para dirigir e se sentir confortável.
+
+Nessa analogia, o Linux é o motor.
+
+Mais tecnicamente, o Linux é um kernel. O kernel é o núcleo, a parte central do sistema operacional. Ele faz o trabalho pesado nos bastidores:
+
+Gerencia o processador, a memória e os dispositivos (como teclado, mouse e impressora).
+
+É a ponte de comunicação entre os seus programas (como o navegador de internet) e o hardware do computador.
+
+Sozinho, o motor (kernel) não é muito útil para um motorista. Você precisa do resto do carro! É por isso que raramente usamos "apenas o Linux". Nós usamos uma distribuição Linux (ou "distro").
+
+Uma distribuição pega o kernel Linux e o "empacota" com todas as outras partes do carro: a interface gráfica (o "painel" e os "vidros"), os programas (o "rádio", o "ar-condicionado") e as ferramentas de sistema. Exemplos famosos de distribuições são o Ubuntu, Linux Mint, Debian e o Fedora.
+
+Fato divertido: Você usa Linux todos os dias e talvez nem saiba! O sistema operacional Android, que está na maioria dos smartphones do mundo, é construído sobre o kernel Linux. Ele está em smart TVs, servidores de internet, supercomputadores e até na Estação Espacial Internacional!
+
+
+
+A criação do Linux
+Em 1991, em Helsinki, Linus Torvalds começou o projeto que mais tarde se tornaria o núcleo Linux. Era inicialmente um emulador de terminal, o qual Torvalds usava para acessar os grandes servidores UNIX da universidade
+
+
+
+
+2. A História: Quando e Por Quem Foi Criado?
+A história do Linux é a prova de que grandes revoluções podem começar de forma bem humilde.
+
+Quando? Tudo começou em 1991.
+
+Por Quem? O criador é uma figura lendária no mundo da tecnologia: Linus Torvalds. Na época, ele era um jovem estudante de ciência da computação na Universidade de Helsinque, na Finlândia.
+
+Linus tinha acabado de comprar seu primeiro computador (um PC com processador 386) e queria um sistema operacional do tipo Unix para rodar nele. Os sistemas Unix profissionais eram extremamente caros, e a alternativa educacional, chamada MINIX, não permitia que ele fizesse as modificações que queria.
+
+Então, ele decidiu fazer o que qualquer estudante de computação ambicioso faria: criar seu próprio kernel do zero, por pura diversão e para aprender!
+
+Em 25 de agosto de 1991, ele enviou uma mensagem para um fórum online que se tornou famosa. Nela, ele dizia (em tradução livre):
+
+"Estou fazendo um sistema operacional (gratuito) (é só um hobby, não será grande e profissional como o gnu) [...] Eu gostaria de receber qualquer feedback sobre coisas que as pessoas gostam/não gostam no MINIX, já que o meu sistema se parece um pouco com ele."
+
+Mal sabia ele que esse "pequeno hobby" se tornaria um dos projetos de software mais importantes da história!
+
+É incrível pensar que algo tão gigante começou com a curiosidade de um único estudante, não acha? A paixão por aprender realmente pode mover o mundo!
+
+Agora que conhecemos o "quando" e o "quem", que tal uma pequena atividade de imaginação?
+
+Simulação: Imagine que estamos em 1991. Eu sou o Linus Torvalds, e você é um colega meu da faculdade que ouviu falar do meu projeto. O que você me perguntaria sobre esse "kernel de hobby" que estou criando?
+
+
+(Assumindo a persona de Linus Torvalds em 1991)
+
+"Ótima pergunta! Sabe, eu comprei esse computador 386 novo e quero explorar tudo o que ele pode fazer. O sistema que usamos na faculdade, o MINIX, é legal para aprender, mas é muito limitado. Eu não posso fazer as modificações que eu quero e adaptá-lo para as minhas necessidades.
+
+Então, para ser sincero, estou criando isso principalmente para mim. É um jeito de aprender a fundo como o hardware funciona e de ter um sistema do tipo Unix rodando na minha própria máquina, sem ter que pagar uma fortuna por um profissional. É mais um desafio, um hobby... um quebra-cabeça gigante que eu acho divertido resolver. Não sei se alguém mais vai usar isso algum dia!"
+
+
+
+A sua pergunta "para que?" tem uma resposta que se divide em algumas partes. Vamos organizar o que eu, como "Linus", acabei de dizer e adicionar um contexto crucial. O Linux foi criado por uma combinação de fatores:
+
+Necessidade Pessoal e Curiosidade: Como vimos, Linus queria um sistema operacional que ele pudesse controlar totalmente e que funcionasse perfeitamente no seu novo computador. Era um projeto de aprendizado.
+
+Limitações do MINIX: O MINIX era bom, mas era feito para fins educacionais e sua licença não era totalmente livre. Linus queria liberdade total para modificar e distribuir seu trabalho.
+
+O Custo Elevado do UNIX: Os sistemas UNIX "de verdade" eram extremamente caros e inacessíveis para estudantes e hobbistas. Faltava uma alternativa gratuita e poderosa.
+
+A Peça que Faltava (O Projeto GNU): Este é o ponto mais importante! Na mesma época, um programador chamado Richard Stallman já tinha um movimento chamado Projeto GNU, cujo objetivo era criar um sistema operacional completo e totalmente livre (GNU é um acrônimo para "GNU Não é Unix"). Eles já tinham criado quase todas as ferramentas necessárias: editores de texto, compiladores, etc. (lembra do chassi e das rodas do carro?). Só faltava uma peça central: o kernel (o motor)! O kernel que o projeto GNU estava desenvolvendo (o Hurd) estava atrasado.
+
+O kernel que Linus Torvalds criou "sem querer" se encaixou como uma luva no ecossistema de ferramentas do GNU. A união do kernel Linux com as ferramentas GNU deu origem ao sistema operacional completo que hoje conhecemos e usamos em tantas distribuições.
+
+Então, o "porquê" foi uma tempestade perfeita de curiosidade pessoal, frustração com as opções existentes e a chegada de uma peça fundamental que um grande movimento por software livre estava esperando.
+
+Resumo Rápido: Desvendando o Linux
+O que é Linux? Na sua essência, Linux não é um sistema operacional completo, mas sim um kernel: o núcleo que gerencia o hardware do computador. Pense nele como o motor de um carro. Para ter o "carro" completo, o kernel é combinado com outros softwares (interface, programas, etc.) para formar uma distribuição (como Ubuntu, Mint e Android).
+
+Quando e Quem Criou? Foi criado em 1991 por Linus Torvalds, um estudante de ciência da computação da Finlândia. O que começou como um projeto de hobby pessoal se transformou em um fenômeno global.
+
+Por que Foi Criado? Surgiu da necessidade de Linus por um sistema operacional do tipo Unix que fosse gratuito, livre e modificável para seu computador pessoal. Ele preencheu a lacuna que faltava no Projeto GNU, que já tinha criado as outras ferramentas de um sistema livre, mas ainda não possuía um kernel funcional. A união do kernel Linux + ferramentas GNU formou o sistema que conhecemos hoje.
+
+Resumo feito! Agora, vamos para o nosso quiz. Prepare-se!
+
+Pergunta do Quiz:
+
+Imagine que um amigo seu diz: "Eu instalei o Linux no meu computador ontem!". Com base no que aprendemos, qual das afirmações abaixo descreve o que ele realmente fez da forma mais correta e técnica?
+
+A) Ele instalou apenas o kernel Linux, e o computador dele agora funciona sem interface gráfica ou programas.
+
+B) Ele instalou uma "distribuição" que usa o kernel Linux junto com as ferramentas do projeto GNU e outros softwares.
+
+C) Ele instalou o sistema operacional completo que foi criado inteiramente por Linus Torvalds em 1991.
+
+D) Ele instalou o sistema operacional Android, pois é a única versão do Linux que existe.
+
+
+
+
+Exato! A resposta B está perfeitamente correta. Mandou muito bem!
+
+Você demonstrou que entendeu o ponto principal da nossa conversa: o que as pessoas chamam de "Linux" no dia a dia é, na verdade, uma distribuição, que é o pacote completo: o kernel Linux (o motor criado por Linus Torvalds) funcionando em conjunto com as ferramentas do projeto GNU e uma interface gráfica.
+
+Fechando nossa sessão
+Com isso, fechamos nossa jornada sobre os fundamentos do Linux com chave de ouro! Nós vimos:
+
+O que é o kernel Linux e como ele se diferencia de uma distribuição.
+
+A história fascinante de sua criação por Linus Torvalds em 1991.
+
+O "porquê" por trás de tudo, unindo a curiosidade de um estudante à necessidade do movimento de software livre.
+
+Você participou ativamente da simulação e acertou em cheio a pergunta do quiz, o que me mostra que você absorveu muito bem os conceitos.

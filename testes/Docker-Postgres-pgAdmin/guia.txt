@@ -1,0 +1,339 @@
+primeiro vamos criar uma rede para conectar tudo isso junto 
+
+´´´bash
+docker network create minha-rede
+´´´
+
+seria legal criar um volume tambem(opicional)
+
+´´´bash
+docker volume create meu-volume
+´´´
+
+primeiro vamos criar uma rede para conectar tudo isso junto 
+
+´´´bash
+docker network create jonatas
+´´´
+
+vamos criar um container para o postgres
+
+exemplo
+- docker run --name nome-container --network nome-rede -e POSTGRES_PASSWORD=senha123 -p 5432:5432 -d imagem-escolhida 
+
+no meu caso eu escolhi
+´´´bash
+docker run --name meuPost --network redePost -e POSTGRES_PASSWORD=senha123 -p 5432:5432 -d postgres:13.22-alpine3.22
+´´´
+
+
+vamos criar um container para o administrador do postgres como um phpmyadmin mas para o postgres
+
+´´´bash
+docker run --name meuPgAdmin --network jonatas -p 8080:80 -e "PGADMIN_DEFAULT_EMAIL=admin@teste.com" -e "PGADMIN_DEFAULT_PASSWORD=senha123" -d dpage/pgadmin4
+´´´
+
+depois de ter dado tudo certo e executar com sucesso
+
+# Vamos Fazer o Teste (Acessar e Conectar)
+Aguarde cerca de 10-15 segundos para o pgAdmin iniciar.
+
+Abra seu navegador e acesse: http://localhost:8080
+
+Você verá a tela de login do pgAdmin. Use as credenciais que você definiu no comando:
+
+Email: admin@teste.com
+
+Senha: senha123
+
+Dentro do pgAdmin, clique com o botão direito em Servers -> Create -> Server...
+
+Na aba General, dê um nome (ex: Meu Docker Postgres).
+
+Vá para a aba Connection. Esta é a parte mais importante:
+
+Host name/address: meuPost (Aqui está a mágica! Como eles estão na mesma rede, usamos o nome do container (meuPost) como o endereço. Não usamos localhost).
+
+Port: 5432
+
+Maintenance database: postgres
+
+Username: postgres
+
+Password: senha123 (a senha do Postgres, não do pgAdmin)
+
+Clique em Save.
+
+Se ele se conectar e você vir o painel do servidor, seu teste foi um sucesso absoluto.
+
+Isso confirma 100% que seu container meuPost está funcionando e aceitando conexões. Este método também está alinhado com sua preferência de segurança, pois você não instalou nada diretamente no seu notebook, mantendo tudo contido e seguro dentro do Docker.
+
+
+
+
+
+
+
+Vamos usar o Docker Compose para facilitar isso. Ele vai gerir os nossos três serviços:
+
+db (o seu container Postgres).
+
+php (um novo container com PHP).
+
+nginx (um servidor web para "servir" o PHP).
+
+Este método é limpo, seguro e reflete um ambiente de produção moderno.
+
+Teste com PHP (Versão 100% Docker)
+Passo 1: Parar e Remover seu container atual (de novo)
+Se você ainda tem o meuPost e o meuPgAdmin rodando, vamos pará-los e removê-los, bem como a rede, para começar do zero e evitar conflitos de porta.
+
+Bash
+
+docker stop meuPost meuPgAdmin
+docker rm meuPost meuPgAdmin
+docker network rm rede-banco
+(Se algum der erro de "não encontrado", não tem problema, siga em frente.)
+
+Passo 2: Criar a estrutura de pastas
+Crie uma nova pasta em qualquer lugar do seu notebook para este projeto. Vamos chamá-la de teste-php-pg.
+
+Dentro dessa pasta, crie mais uma pasta chamada src (abreviação de source).
+
+Você terá esta estrutura:
+
+teste-php-pg/
+├── src/
+Passo 3: Criar os arquivos do projeto
+Dentro da pasta teste-php-pg/, crie o seguinte arquivo:
+
+Arquivo 1: docker-compose.yml (Este é o arquivo principal)
+
+YAML
+
+version: '3.8'
+
+services:
+  # Serviço 1: Nosso Banco de Dados Postgres
+  db:
+    image: postgres:13-alpine
+    container_name: meuPost-compose
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: senha123
+    ports:
+      - "5432:5432" # Expõe a porta para podermos conectar via pgAdmin (opcional)
+    volumes:
+      - dados-postgres:/var/lib/postgresql/data
+    networks:
+      - rede-app
+
+  # Serviço 2: Nosso Servidor Web Nginx
+  nginx:
+    image: nginx:1.21-alpine
+    container_name: meuNginx-compose
+    restart: always
+    ports:
+      - "8000:80" # Vamos acessar nossa aplicação pela porta 8000
+    volumes:
+      - ./src:/var/www/html        # Mapeia nossa pasta 'src'
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf # Arquivo de config do Nginx
+    networks:
+      - rede-app
+    depends_on:
+      - php
+
+  # Serviço 3: Nossa Aplicação PHP
+  php:
+    image: php:8.1-fpm-alpine
+    container_name: meuPHP-compose
+    restart: always
+    volumes:
+      - ./src:/var/www/html # Mapeia nossa pasta 'src'
+    networks:
+      - rede-app
+    depends_on:
+      - db # O PHP só sobe depois que o DB estiver pronto
+
+networks:
+  rede-app:
+    driver: bridge
+
+volumes:
+  dados-postgres:
+    driver: local
+Arquivo 2: nginx.conf (Também na raiz teste-php-pg/)
+
+Nginx
+
+server {
+    listen 80;
+    index index.php index.html;
+    server_name localhost;
+    root /var/www/html;
+    
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location ~ \.php$ {
+        try_files $uri =404;
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass php:9000; # 'php' é o nome do serviço PHP no docker-compose
+        fastcgi_index index.php;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param PATH_INFO $fastcgi_path_info;
+    }
+}
+Passo 4: Criar os arquivos PHP (dentro da pasta src/)
+Agora, dentro da pasta teste-php-pg/src/, crie os mesmos dois arquivos da nossa conversa anterior.
+
+Arquivo 3: teste-php-pg/src/index.html
+
+HTML
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste Postgres com PHP (Docker)</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; background: #f4f4f4; }
+        .container { max-width: 600px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; }
+        input[type="text"] { width: 95%; padding: 8px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Testar Conexão e Inserir Dados (Docker)</h2>
+        <p>Isso tentará conectar ao banco, criar uma tabela "visitantes" (se não existir) e inserir seu nome.</p>
+        
+        <form action="conectar.php" method="post">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <input type="submit" value="Testar e Salvar">
+        </form>
+    </div>
+</body>
+</html>
+Arquivo 4: teste-php-pg/src/conectar.php (Atenção aqui, o $host mudou!)
+
+PHP
+
+<?php
+// Detalhes da conexão
+$host = 'db';       // <-- MUITO IMPORTANTE: Usamos o nome do serviço 'db' do docker-compose
+$port = '5432';
+$db = 'postgres'; 
+$user = 'postgres'; 
+$pass = 'senha123'; // Sua senha
+
+$dsn = "pgsql:host=$host;port=$port;dbname=$db;user=$user;password=$pass";
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado da Conexão</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; background: #f4f4f4; }
+        .container { max-width: 600px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <?php
+    try {
+        // 1. Tentar conectar
+        $pdo = new PDO($dsn);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        
+        echo "<h1 class='success'>Conexão com PostgreSQL (Docker) bem-sucedida!</h1>";
+
+        // 2. Criar uma tabela (se ela não existir)
+        $pdo->exec("CREATE TABLE IF NOT EXISTS visitantes (
+                        id SERIAL PRIMARY KEY,
+                        nome VARCHAR(100) NOT NULL,
+                        data_visita TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                    )");
+        echo "<p>Tabela 'visitantes' verificada/criada.</p>";
+
+        // 3. Inserir dados (se o formulário foi enviado)
+        if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['nome'])) {
+            $nome = htmlspecialchars($_POST['nome']);
+            
+            $stmt = $pdo->prepare("INSERT INTO visitantes (nome) VALUES (?)");
+            $stmt->execute([$nome]);
+            
+            echo "<p>Usuário '<strong>{$nome}</strong>' inserido com sucesso!</p>";
+        }
+
+        // 4. Mostrar todos os dados da tabela
+        echo "<h3>Visitantes Registrados no Banco:</h3>";
+        $stmt = $pdo->query("SELECT nome, data_visita FROM visitantes ORDER BY data_visita DESC");
+        
+        echo "<ul>";
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            echo "<li>" . $row['nome'] . " (em " . $row['data_visita'] . ")</li>";
+        }
+        echo "</ul>";
+
+    } catch (PDOException $e) {
+        echo "<h1 class='error'>Falha na conexão!</h1>";
+        echo "<p><strong>Erro:</strong> " . $e->getMessage() . "</p>";
+        echo "<hr>";
+        echo "<p><strong>Possíveis Soluções:</strong></p>";
+        echo "<ul>";
+        echo "<li>O nome do host 'db' está correto no 'conectar.php'?</li>";
+        echo "<li>O nome do serviço 'db' está correto no 'docker-compose.yml'?</li>";
+        echo "<li>Os containers estão rodando? (Verifique com 'docker-compose ps')</li>";
+        echo "<li>A senha 'senha123' está correta em ambos os arquivos?</li>";
+        echo "</ul>";
+    }
+    ?>
+    <br>
+    <a href="index.html">Voltar ao formulário</a>
+</div>
+</body>
+</html>
+Passo 5: Rodar tudo!
+Abra seu terminal.
+
+Navegue até a pasta do projeto (a teste-php-pg/).
+
+Rode o comando mágico:
+
+Bash
+
+docker-compose up -d --build
+up vai "levantar" tudo que está no docker-compose.yml.
+
+-d (detached) roda em segundo plano.
+
+--build força ele a construir as imagens se necessário (embora aqui estejamos usando imagens prontas).
+
+Aguarde uns 30 segundos. Ele vai baixar o Postgres, o Nginx e o PHP.
+
+Passo 6: Fazer o Teste Final
+Abra seu navegador e acesse: http://localhost:8000 (Note a porta 8000, que definimos no docker-compose.yml para o Nginx).
+
+Você verá o index.html.
+
+Digite um nome no formulário e clique em "Testar e Salvar".
+
+Você será levado ao conectar.php.
+
+Se a página mostrar "Conexão com PostgreSQL (Docker) bem-sucedida!" e o nome que você digitou aparecer na lista, parabéns, funcionou perfeitamente!
+
+Você acabou de criar um ambiente de desenvolvimento completo e seguro, com banco de dados e aplicação rodando em containers separados, exatamente como você faria num projeto real.
+
+Quando terminar, para desligar tudo, é só voltar ao terminal (na mesma pasta) e digitar:
+
+Bash
+
+docker-compose down
+(Se quiser apagar o volume com os dados do banco também, use docker-compose down -v).
