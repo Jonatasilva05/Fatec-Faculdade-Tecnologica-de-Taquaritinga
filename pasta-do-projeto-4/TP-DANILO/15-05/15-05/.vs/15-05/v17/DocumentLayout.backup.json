@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\0220832311013\\Desktop\\Fatec6-Semestre1\\TP-DANILO\\15-05\\15-05\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F117059-4596-47E7-9787-8D45D09BBDAB}|15-05\\15-05.csproj|c:\\users\\0220832311013\\desktop\\fatec6-semestre1\\tp-danilo\\15-05\\15-05\\15-05\\repository\\alunorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F117059-4596-47E7-9787-8D45D09BBDAB}|15-05\\15-05.csproj|solutionrelative:15-05\\repository\\alunorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F117059-4596-47E7-9787-8D45D09BBDAB}|15-05\\15-05.csproj|c:\\users\\0220832311013\\desktop\\fatec6-semestre1\\tp-danilo\\15-05\\15-05\\15-05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F117059-4596-47E7-9787-8D45D09BBDAB}|15-05\\15-05.csproj|solutionrelative:15-05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F117059-4596-47E7-9787-8D45D09BBDAB}|15-05\\15-05.csproj|c:\\users\\0220832311013\\desktop\\fatec6-semestre1\\tp-danilo\\15-05\\15-05\\15-05\\15-05.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7F117059-4596-47E7-9787-8D45D09BBDAB}|15-05\\15-05.csproj|solutionrelative:15-05\\15-05.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F117059-4596-47E7-9787-8D45D09BBDAB}|15-05\\15-05.csproj|c:\\users\\0220832311013\\desktop\\fatec6-semestre1\\tp-danilo\\15-05\\15-05\\15-05\\models\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F117059-4596-47E7-9787-8D45D09BBDAB}|15-05\\15-05.csproj|solutionrelative:15-05\\models\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AlunoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\0220832311013\\Desktop\\Fatec6-Semestre1\\TP-DANILO\\15-05\\15-05\\15-05\\Repository\\AlunoRepository.cs",
+              "RelativeDocumentMoniker": "15-05\\Repository\\AlunoRepository.cs",
+              "ToolTip": "C:\\Users\\0220832311013\\Desktop\\Fatec6-Semestre1\\TP-DANILO\\15-05\\15-05\\15-05\\Repository\\AlunoRepository.cs",
+              "RelativeToolTip": "15-05\\Repository\\AlunoRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAwwBkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T13:52:02.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Aluno.cs",
+              "DocumentMoniker": "C:\\Users\\0220832311013\\Desktop\\Fatec6-Semestre1\\TP-DANILO\\15-05\\15-05\\15-05\\Models\\Aluno.cs",
+              "RelativeDocumentMoniker": "15-05\\Models\\Aluno.cs",
+              "ToolTip": "C:\\Users\\0220832311013\\Desktop\\Fatec6-Semestre1\\TP-DANILO\\15-05\\15-05\\15-05\\Models\\Aluno.cs",
+              "RelativeToolTip": "15-05\\Models\\Aluno.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T13:34:10.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "15-05",
+              "DocumentMoniker": "C:\\Users\\0220832311013\\Desktop\\Fatec6-Semestre1\\TP-DANILO\\15-05\\15-05\\15-05\\15-05.csproj",
+              "RelativeDocumentMoniker": "15-05\\15-05.csproj",
+              "ToolTip": "C:\\Users\\0220832311013\\Desktop\\Fatec6-Semestre1\\TP-DANILO\\15-05\\15-05\\15-05\\15-05.csproj",
+              "RelativeToolTip": "15-05\\15-05.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-15T13:32:52.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\0220832311013\\Desktop\\Fatec6-Semestre1\\TP-DANILO\\15-05\\15-05\\15-05\\Program.cs",
+              "RelativeDocumentMoniker": "15-05\\Program.cs",
+              "ToolTip": "C:\\Users\\0220832311013\\Desktop\\Fatec6-Semestre1\\TP-DANILO\\15-05\\15-05\\15-05\\Program.cs",
+              "RelativeToolTip": "15-05\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T13:31:33.477Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

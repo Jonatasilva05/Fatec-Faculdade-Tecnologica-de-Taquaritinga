@@ -1,0 +1,15 @@
+C:\Users\0220832311013\Desktop\Fatec6-Semestre1\BD-DANILO\24-04\24-04\obj\Debug\net8.0\24-04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\0220832311013\Desktop\Fatec6-Semestre1\BD-DANILO\24-04\24-04\obj\Debug\net8.0\24-04.AssemblyInfoInputs.cache
+C:\Users\0220832311013\Desktop\Fatec6-Semestre1\BD-DANILO\24-04\24-04\obj\Debug\net8.0\24-04.AssemblyInfo.cs
+C:\Users\0220832311013\Desktop\Fatec6-Semestre1\BD-DANILO\24-04\24-04\obj\Debug\net8.0\24-04.csproj.CoreCompileInputs.cache
+C:\Users\0220832311013\Desktop\Fatec6-Semestre1\BD-DANILO\24-04\24-04\obj\Debug\net8.0\24-04.sourcelink.json
+C:\Users\0220832311013\Desktop\Fatec6-Semestre1\BD-DANILO\24-04\24-04\bin\Debug\net8.0\24-04.exe
+C:\Users\0220832311013\Desktop\Fatec6-Semestre1\BD-DANILO\24-04\24-04\bin\Debug\net8.0\24-04.deps.json
+C:\Users\0220832311013\Desktop\Fatec6-Semestre1\BD-DANILO\24-04\24-04\bin\Debug\net8.0\24-04.runtimeconfig.json
+C:\Users\0220832311013\Desktop\Fatec6-Semestre1\BD-DANILO\24-04\24-04\bin\Debug\net8.0\24-04.dll
+C:\Users\0220832311013\Desktop\Fatec6-Semestre1\BD-DANILO\24-04\24-04\bin\Debug\net8.0\24-04.pdb
+C:\Users\0220832311013\Desktop\Fatec6-Semestre1\BD-DANILO\24-04\24-04\obj\Debug\net8.0\24-04.dll
+C:\Users\0220832311013\Desktop\Fatec6-Semestre1\BD-DANILO\24-04\24-04\obj\Debug\net8.0\refint\24-04.dll
+C:\Users\0220832311013\Desktop\Fatec6-Semestre1\BD-DANILO\24-04\24-04\obj\Debug\net8.0\24-04.pdb
+C:\Users\0220832311013\Desktop\Fatec6-Semestre1\BD-DANILO\24-04\24-04\obj\Debug\net8.0\24-04.genruntimeconfig.cache
+C:\Users\0220832311013\Desktop\Fatec6-Semestre1\BD-DANILO\24-04\24-04\obj\Debug\net8.0\ref\24-04.dll

@@ -1,0 +1,5 @@
+USE JONATAS;
+GO
+
+SELECT * 
+FROM dbo.ALUNO;

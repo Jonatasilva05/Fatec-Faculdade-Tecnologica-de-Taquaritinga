@@ -1,0 +1,14 @@
+C:\Users\0220832311013\source\repos\13-02\13-02\bin\Debug\net8.0\13-02.exe
+C:\Users\0220832311013\source\repos\13-02\13-02\bin\Debug\net8.0\13-02.deps.json
+C:\Users\0220832311013\source\repos\13-02\13-02\bin\Debug\net8.0\13-02.runtimeconfig.json
+C:\Users\0220832311013\source\repos\13-02\13-02\bin\Debug\net8.0\13-02.dll
+C:\Users\0220832311013\source\repos\13-02\13-02\bin\Debug\net8.0\13-02.pdb
+C:\Users\0220832311013\source\repos\13-02\13-02\obj\Debug\net8.0\13-02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\0220832311013\source\repos\13-02\13-02\obj\Debug\net8.0\13-02.AssemblyInfoInputs.cache
+C:\Users\0220832311013\source\repos\13-02\13-02\obj\Debug\net8.0\13-02.AssemblyInfo.cs
+C:\Users\0220832311013\source\repos\13-02\13-02\obj\Debug\net8.0\13-02.csproj.CoreCompileInputs.cache
+C:\Users\0220832311013\source\repos\13-02\13-02\obj\Debug\net8.0\13-02.dll
+C:\Users\0220832311013\source\repos\13-02\13-02\obj\Debug\net8.0\refint\13-02.dll
+C:\Users\0220832311013\source\repos\13-02\13-02\obj\Debug\net8.0\13-02.pdb
+C:\Users\0220832311013\source\repos\13-02\13-02\obj\Debug\net8.0\13-02.genruntimeconfig.cache
+C:\Users\0220832311013\source\repos\13-02\13-02\obj\Debug\net8.0\ref\13-02.dll

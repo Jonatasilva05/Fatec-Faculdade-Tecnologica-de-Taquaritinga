@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\0220832311013\\Downloads\\06-03\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9F1D40-DE9F-452F-9248-21784325B14B}|06-03\\06-03.csproj|c:\\users\\0220832311013\\downloads\\06-03\\06-03\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9F1D40-DE9F-452F-9248-21784325B14B}|06-03\\06-03.csproj|solutionrelative:06-03\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9F1D40-DE9F-452F-9248-21784325B14B}|06-03\\06-03.csproj|c:\\users\\0220832311013\\downloads\\06-03\\06-03\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9F1D40-DE9F-452F-9248-21784325B14B}|06-03\\06-03.csproj|solutionrelative:06-03\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9F1D40-DE9F-452F-9248-21784325B14B}|06-03\\06-03.csproj|c:\\users\\0220832311013\\downloads\\06-03\\06-03\\corrente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9F1D40-DE9F-452F-9248-21784325B14B}|06-03\\06-03.csproj|solutionrelative:06-03\\corrente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9F1D40-DE9F-452F-9248-21784325B14B}|06-03\\06-03.csproj|c:\\users\\0220832311013\\downloads\\06-03\\06-03\\poupanca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9F1D40-DE9F-452F-9248-21784325B14B}|06-03\\06-03.csproj|solutionrelative:06-03\\poupanca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Poupanca.cs",
+              "DocumentMoniker": "C:\\Users\\0220832311013\\Downloads\\06-03\\06-03\\Poupanca.cs",
+              "RelativeDocumentMoniker": "06-03\\Poupanca.cs",
+              "ToolTip": "C:\\Users\\0220832311013\\Downloads\\06-03\\06-03\\Poupanca.cs",
+              "RelativeToolTip": "06-03\\Poupanca.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T14:57:36.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Corrente.cs",
+              "DocumentMoniker": "C:\\Users\\0220832311013\\Downloads\\06-03\\06-03\\Corrente.cs",
+              "RelativeDocumentMoniker": "06-03\\Corrente.cs",
+              "ToolTip": "C:\\Users\\0220832311013\\Downloads\\06-03\\06-03\\Corrente.cs",
+              "RelativeToolTip": "06-03\\Corrente.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T14:34:37.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Conta.cs",
+              "DocumentMoniker": "C:\\Users\\0220832311013\\Downloads\\06-03\\06-03\\Conta.cs",
+              "RelativeDocumentMoniker": "06-03\\Conta.cs",
+              "ToolTip": "C:\\Users\\0220832311013\\Downloads\\06-03\\06-03\\Conta.cs",
+              "RelativeToolTip": "06-03\\Conta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T14:34:24.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\0220832311013\\Downloads\\06-03\\06-03\\Program.cs",
+              "RelativeDocumentMoniker": "06-03\\Program.cs",
+              "ToolTip": "C:\\Users\\0220832311013\\Downloads\\06-03\\06-03\\Program.cs",
+              "RelativeToolTip": "06-03\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T14:33:59.008Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
