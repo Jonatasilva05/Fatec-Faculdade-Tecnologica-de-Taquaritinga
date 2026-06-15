@@ -1,0 +1,10 @@
+padoca
+    |-> app    -> pasta privada
+        |-> models      -> templates que se conectam ao banco de dados, para cada tabela do banco de dados voce precisara de um arquivo no model( modelos de acessadores ao banco de dados ), basicamente um sql em outra linguagem
+        |-> views       -> templates em html, para montar pagina e deixa-la pronta para o usuario visualizar
+        |-> controllers -> templates de controle do projeto, ele que monta o arquivo que quer, usando um css, um js, ou arquivo do banco de dados e assim por diante
+        |-> core        ->
+        |-> database    ->
+    |-> css    -> pasta publica
+    |-> js     -> pasta publica
+    |-> images -> pasta publica

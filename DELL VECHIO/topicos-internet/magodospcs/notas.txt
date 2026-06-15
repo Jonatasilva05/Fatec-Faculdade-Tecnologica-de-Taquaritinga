@@ -1,0 +1,92 @@
+# 1 ============================================
+<?php
+
+    # $_SERVER é uma variável global
+    $_SERVER 
+
+?>
+
+
+
+# 2 ============================================
+<?php
+
+    # É de suma importância lembrar que a tag <echo> nao le arquivos array
+    $_SERVER
+
+?>
+
+
+
+# 3 ============================================
+<?php
+
+    # Serve para permitir que consigamos ver o que tem dentro do $_SERVER
+    # Despeja todos os caracteres da variável
+    var_dump() 
+
+?>
+
+
+
+# 4 ============================================
+<?php
+
+    # Quando juntamos var_dump() com $_SERVER, ele trará todos os array dentro de $_SERVER
+    var_dump($_SERVER);
+
+?>
+
+
+
+# 5 ============================================
+<?php
+
+    # Fará com que todas as informações que estão sendo trazidas do var_dump($_SERVER) receba uma "quebra de linha" e fique em modo lista
+    echo "<pre>";
+        var_dump($_SERVER);
+    echo "</pre>";
+
+?>
+
+
+
+# 6 ============================================
+<?php
+
+    $uri = $_SERVER["REQUEST_URI"];
+
+    if($uri == "/"){
+        echo "esta na pagina inicial";
+    }
+    else
+        if($uri == "/quemsomos"){
+            echo "que acessar a pagina quem somos";
+    }
+    else
+        if($uri == "/contato"){
+            echo "quer acessar a pagina de contato"; 
+    }
+
+?>
+
+
+
+# 7 ============================================
+<?php
+
+    $uri = $_SERVER["REQUEST_URI"];
+
+    if($uri == "/"){
+        include __DIR__ . "/app/controllers/inicioController.php";
+    }
+    else
+        if($uri == "/quemsomos"){
+        include __DIR__ . "/app/controllers/quemsomosController.php";
+    }
+    else
+        if($uri == "/contato"){
+        include __DIR__ . "/app/controllers/contatoController.php";
+    }
+
+?>
